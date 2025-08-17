@@ -1,5 +1,5 @@
 /* assets/css/custom.css */
-/* Make Notepad content render HTML (instead of <textarea>) while matching 98.css look */
+/* Make Notepad content render HTML (instead of <textarea>) while matching Win98 stylw */
 
 .window.notepad .content .notepad-body {
   /* mimic textarea visual vibe */
@@ -27,6 +27,8 @@
 .window.notepad .content .notepad-body strong { font-weight: bold; }
 .window.notepad .content .notepad-body a { color: #0000ee; text-decoration: underline; }
 
+
+/* Original Windows98 style starts here */
 body {
     background: #008080;
     margin: 0;
