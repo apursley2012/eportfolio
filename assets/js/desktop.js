@@ -1,144 +1,144 @@
-<script>
+/* assets/js/desktop.js
+   Hooks into the existing Windows 98 demo from your dist/index.html
+   - Opens Notepad with rich text (bold/italic) loaded from /content/*.html
+   - Opens Internet Explorer window and sets its iframe URL for GitHub links
+   - Types the Notepad window title (and first H1 inside the doc) on load
+   - Respects the demo’s checkbox IDs already present in the dist markup:
+       #windows-notepad-input, #windows-notepad-input-on-top
+       #windows-ie-input,     #windows-ie-input-on-top
+*/
 
-function openDoc(url) {
-  const win = document.getElementById('documents-window');
-  const frame = document.getElementById('doc-frame');
-  if (win) win.style.display = 'block';
-  if (frame) frame.src = url;
-}
-
-/* ===== Win98 portfolio glue (typed title + bold/italic in Notepad) ===== */
 (function () {
-  // ---- Helpers ----------------------------------------------------------
-  function bringToFront(openInputId, onTopInputId) {
-    const open = document.getElementById(openInputId);
-    const onTop = document.getElementById(onTopInputId);
-    if (open) open.checked = true;
-    if (onTop) onTop.checked = true;
+  // --- Cached handles (filled on DOM ready) ---
+  let notepadOnInput, notepadTopInput, notepadWindow, notepadTitleEl, notepadContentHost;
+  let ieOnInput, ieTopInput, ieWindow, ieIframe, ieTitleEl;
+
+  // Small helper: bring a pair of ON/TOP checkboxes to the front
+  function bringToFront(onInput, topInput) {
+    if (onInput) onInput.checked = true;
+    if (topInput) topInput.checked = true;
   }
 
-  function escapeHTML(s) {
-    return s
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;");
-  }
+  // Replace Notepad's <textarea> once with a HTML-capable pane
+  function ensureNotepadHtmlPane() {
+    if (!notepadWindow) return;
+    const content = notepadWindow.querySelector('.content');
+    if (!content) return;
 
-  // Minimal markdown: **bold**, *italic* or _italic_
-  function parseLiteMD(txt) {
-    // escape first, then re-insert allowed tags
-    let html = escapeHTML(txt);
-
-    // bold: **text**
-    html = html.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
-    // italic: *text* or _text_
-    html = html.replace(/(^|[^*])\*(?!\s)(.+?)(?!\s)\*(?!\*)/g, '$1<i>$2</i>');
-    html = html.replace(/(^|[^_])_(?!\s)(.+?)(?!\s)_(?!_)/g, '$1<i>$2</i>');
-
-    return html;
-  }
-
-  function typeTitleThenShowRest(container, fullText, charDelay) {
-    const lines = fullText.split(/\r?\n/);
-
-    // find first non-empty (visible) line
-    let idx = lines.findIndex(l => l.trim().length > 0);
-    if (idx < 0) { container.innerHTML = parseLiteMD(fullText); return; }
-
-    const before = lines.slice(0, idx).join("\n");
-    const title = lines[idx];
-    const after = lines.slice(idx + 1).join("\n");
-
-    // show any blank lines before the title (escaped)
-    container.innerHTML = parseLiteMD(before + (before ? "\n" : ""));
-
-    // type the title as plain text first
-    let i = 0;
-    (function type() {
-      if (i <= title.length) {
-        container.innerHTML = parseLiteMD(before + (before ? "\n" : "")) + escapeHTML(title.slice(0, i));
-        container.scrollTop = container.scrollHeight;
-        i++;
-        setTimeout(type, charDelay);
-      } else {
-        // when done typing, re-render the title with formatting and append the rest (formatted)
-        const fullHTML =
-          parseLiteMD(before + (before ? "\n" : "")) +
-          parseLiteMD(title) + "\n\n" +
-          parseLiteMD(after);
-        container.innerHTML = fullHTML;
-        container.scrollTop = 0;
-      }
-    })();
-  }
-
-  // ---- Actions ----------------------------------------------------------
-  function openNotepad(path, typedTitle) {
-    const np = document.getElementById('npText');
-    if (!np) return;
-
-    // show Notepad window (update these IDs to match your dist index.html)
-    bringToFront('windows-notepad-input', 'windows-notepad-input-on-top');
-
-    fetch(path)
-      .then(r => r.text())
-      .then(text => {
-        if (typedTitle) {
-          np.innerHTML = ""; // clear and type first line
-          typeTitleThenShowRest(np, text, 14);
-        } else {
-          np.innerHTML = parseLiteMD(text);
-          np.scrollTop = 0;
-        }
-      })
-      .catch(err => alert('Could not load: ' + path + '\n' + err));
-  }
-
-  function openIE(url) {
-    const frame = document.querySelector('.window.ie iframe');
-    if (frame) frame.src = url || 'about:blank';
-    bringToFront('windows-ie-input', 'windows-ie-input-on-top');
-  }
-
-  // ---- Event delegation for all links -------------------------------
-  document.addEventListener('click', function (e) {
-    const a = e.target.closest('a[data-open]');
-    if (!a) return;
-
-    const action = a.dataset.open;
-    if (action === 'notepad') {
-      e.preventDefault();
-      const typed = a.dataset.typedTitle === '1' ||
-                    /\/narratives\//.test(a.getAttribute('href') || '');
-      openNotepad(a.getAttribute('href'), typed);
-    } else if (action === 'ie') {
-      e.preventDefault();
-      openIE(a.dataset.url || a.getAttribute('href'));
+    // If we've already converted it, bail
+    if (content.querySelector('.notepad-body')) {
+      notepadContentHost = content.querySelector('.notepad-body');
+      return;
     }
-  });
 
-  // ---- Typed welcome on first load (optional file) ------------------
-  // Change/remove this if you don't want the desktop to boot into Notepad
-  const WELCOME = 'content/welcome.txt';
-  fetch(WELCOME).then(r => r.text()).then(text => {
-    const np = document.getElementById('npText');
-    if (!np) return;
-    bringToFront('windows-notepad-input', 'windows-notepad-input-on-top');
+    // Remove existing <textarea> (demo default)
+    const ta = content.querySelector('textarea');
+    if (ta) ta.remove();
 
-    // type entire welcome
+    // Insert our HTML-capable area (styled to look like Notepad)
+    const host = document.createElement('div');
+    host.className = 'notepad-body';
+    host.setAttribute('role', 'document');
+    content.appendChild(host);
+    notepadContentHost = host;
+  }
+
+  // Typed effect for a single element’s text
+  function typeText(el, text, speed) {
+    if (!el) return;
+    el.textContent = '';
     let i = 0;
-    (function typeAll() {
-      if (i <= text.length) {
-        // For welcome we keep it plain while typing; then format once at end
-        np.innerHTML = escapeHTML(text.slice(0, i));
-        np.scrollTop = np.scrollHeight;
-        i++;
-        setTimeout(typeAll, 12);
-      } else {
-        np.innerHTML = parseLiteMD(text);
-        np.scrollTop = 0;
+    (function tick() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i++);
+        setTimeout(tick, speed);
       }
     })();
-  }).catch(() => { /* no welcome file, ignore */ });
+  }
+
+  // Optional: also type the first H1 in the loaded doc
+  function typeFirstHeadingInNotepad(speed) {
+    if (!notepadContentHost) return;
+    const h1 = notepadContentHost.querySelector('h1');
+    if (!h1) return;
+    const original = h1.textContent.trim();
+    typeText(h1, original, speed);
+  }
+
+  // Load an external HTML fragment into Notepad (keeps formatting)
+  function loadIntoNotepad(path, windowTitle, { typeTitle = true, typeSpeed = 20 } = {}) {
+    ensureNotepadHtmlPane();
+    if (!notepadContentHost) return;
+
+    fetch(path, { cache: 'no-cache' })
+      .then(resp => resp.text())
+      .then(html => {
+        notepadContentHost.innerHTML = html;
+
+        if (notepadTitleEl && windowTitle) {
+          if (typeTitle) {
+            typeText(notepadTitleEl, windowTitle, typeSpeed);
+          } else {
+            notepadTitleEl.textContent = windowTitle;
+          }
+        }
+        // Optional type animation for first H1 in doc
+        typeFirstHeadingInNotepad(typeSpeed);
+      })
+      .catch(err => {
+        if (notepadContentHost) {
+          notepadContentHost.innerHTML =
+            '<p><strong>Error loading document.</strong></p><p>' +
+            (err && err.message ? err.message : 'Unknown error') + '</p>';
+        }
+        if (notepadTitleEl && windowTitle) notepadTitleEl.textContent = windowTitle;
+      });
+  }
+
+  // Public: open a narrative in Notepad
+  window.openNarrative = function (path, title) {
+    bringToFront(notepadOnInput, notepadTopInput);
+    loadIntoNotepad(path, title, { typeTitle: true, typeSpeed: 16 });
+  };
+
+  // Public: open a URL in Internet Explorer window (inside desktop)
+  window.openInIE = function (url, title) {
+    if (!ieIframe) return;
+    bringToFront(ieOnInput, ieTopInput);
+    ieIframe.setAttribute('src', url || 'about:blank');
+    if (ieTitleEl && title) ieTitleEl.textContent = title;
+  };
+
+  // OPTIONAL: auto-load the welcome doc on first paint
+  function autoLoadWelcome() {
+    if (!notepadOnInput || !notepadTopInput) return;
+    bringToFront(notepadOnInput, notepadTopInput);
+    loadIntoNotepad('content/welcome.html', 'Welcome — Read Me First', { typeTitle: true, typeSpeed: 20 });
+  }
+
+  // DOM ready: wire everything
+  document.addEventListener('DOMContentLoaded', function () {
+    // Notepad
+    notepadOnInput  = document.getElementById('windows-notepad-input');
+    notepadTopInput = document.getElementById('windows-notepad-input-on-top');
+    notepadWindow   = document.querySelector('.window.notepad');
+    notepadTitleEl  = notepadWindow ? notepadWindow.querySelector('.title-bar-text') : null;
+
+    // Internet Explorer
+    ieOnInput  = document.getElementById('windows-ie-input');
+    ieTopInput = document.getElementById('windows-ie-input-on-top');
+    ieWindow   = document.querySelector('.window.ie');
+    ieTitleEl  = ieWindow ? ieWindow.querySelector('.title-bar-text') : null;
+    ieIframe   = ieWindow ? ieWindow.querySelector('.content iframe') : null;
+
+    // Make the whole Notepad content HTML-capable
+    ensureNotepadHtmlPane();
+
+    // If you want the desktop to open with instructions, enable this:
+    autoLoadWelcome();
+
+    // Example wiring (use these in your Start menu or desktop shortcuts):
+    // <a href="#" onclick="openNarrative('content/enhancement1.html','Software Design & Engineering'); return false;">Enhancement 1</a>
+    // <a href="#" onclick="openInIE('https://github.com/USER/REPO/path','Corner Grocer — GitHub'); return false;">View Code</a>
+  });
 })();
-</script>
