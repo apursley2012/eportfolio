@@ -1,34 +1,6 @@
-/* assets/css/custom.css */
-/* Make Notepad content render HTML (instead of <textarea>) while matching Win98 stylw */
+/* assets/css/style.css */
+/*-------------------------------------------------------------------------------------------------------------------------*/
 
-.window.notepad .content .notepad-body {
-  /* mimic textarea visual vibe */
-  background: #fff;
-  color: #000;
-  border: 2px inset #c0c0c0;
-  padding: 8px;
-  min-height: 240px;
-  line-height: 1.4;
-  font: 13px/1.4 "MS Sans Serif", "Share Tech Mono", monospace;
-  overflow: auto;
-  white-space: normal;
-}
-
-/* Basic typography inside narratives */
-.window.notepad .content .notepad-body h1,
-.window.notepad .content .notepad-body h2 {
-  margin: 0 0 10px 0;
-  font-weight: bold;
-}
-.window.notepad .content .notepad-body p { margin: 0 0 10px 0; }
-.window.notepad .content .notepad-body ul { margin: 0 0 10px 1.2em; }
-.window.notepad .content .notepad-body li { margin: 4px 0; }
-.window.notepad .content .notepad-body em { font-style: italic; }
-.window.notepad .content .notepad-body strong { font-weight: bold; }
-.window.notepad .content .notepad-body a { color: #0000ee; text-decoration: underline; }
-
-
-/* Original Windows98 style starts here */
 body {
     background: #008080;
     margin: 0;
@@ -1458,3 +1430,38 @@ h2 {
     padding: 1rem;
     box-sizing: border-box;
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------ Original Windows98 style ends here ------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+/* Make Notepad content render HTML (instead of <textarea>) while matching Win98 stylw */
+
+.window.notepad .content .notepad-body {
+  /* mimic textarea visual vibe */
+  background: #fff;
+  color: #000;
+  border: 2px inset #c0c0c0;
+  padding: 8px;
+  min-height: 240px;
+  line-height: 1.4;
+  font: 13px/1.4 "MS Sans Serif", "Share Tech Mono", monospace;
+  overflow: auto;
+  white-space: normal;
+}
+
+/* Basic typography inside narratives */
+.window.notepad .content .notepad-body h1,
+.window.notepad .content .notepad-body h2 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+.window.notepad .content .notepad-body p { margin: 0 0 10px 0; }
+.window.notepad .content .notepad-body ul { margin: 0 0 10px 1.2em; }
+.window.notepad .content .notepad-body li { margin: 4px 0; }
+.window.notepad .content .notepad-body em { font-style: italic; }
+.window.notepad .content .notepad-body strong { font-weight: bold; }
+.window.notepad .content .notepad-body a { color: #0000ee; text-decoration: underline; }
+
+
+
