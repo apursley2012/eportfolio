@@ -1,6 +1,65 @@
 /* assets/css/style.css */
 /*----------------------------------------*/
 
+/* Added CSS Begins Here */
+<style>
+  /* ===== Boot Terminal (full-screen overlay) ===== */
+  #boot-terminal.window {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;            /* over everything */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;                /* remove any default margins from your window component */
+  }
+  /* If your window system has its own padding/margins, this ensures true fullscreen */
+  #boot-terminal .window-body {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 28px); /* subtract your title-bar height if different */
+    overflow: auto;
+    background: #000;         /* terminal look */
+    color: #33ff00;           /* bright green text */
+    font-family: "Source Code Pro", "Hack", "Share Tech Mono", monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 14px 16px;
+    text-shadow:
+      0 0 8px #2bd852,
+      1px 1px 5px #a9a9a9,
+      -1px -1px 5px #3a3a3a;
+    white-space: pre-wrap;    /* preserves line breaks */
+  }
+
+  /* Optional: glow for the title text so it matches your terminal vibe */
+  #boot-terminal .title-bar-text {
+    -webkit-text-fill-color: #33ff00;
+    -webkit-text-stroke: 1px #000;
+    color: #33ff00;
+    text-shadow:
+      5px 5px 2.5px #202020,
+      0 0 10px #2bd852,
+      2.5px 2.5px 5px #a9a9a9,
+      -2.5px -2.5px 5px #3a3a3a;
+    font-family: "MS Sans Serif", Tahoma, system-ui, sans-serif;
+  }
+
+  /* Hide until script shows it (prevents flash if your desktop JS moves things around) */
+  #boot-terminal[aria-hidden="true"] { display: none; }
+
+  /* Optional caret blink at the end of typed text */
+  .caret::after {
+    content: "▌";
+    display: inline-block;
+    margin-left: 3px;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+
+/* Added CSS Ends here */
+
 body {
     background: #008080;
     margin: 0;
