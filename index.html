@@ -1,9 +1,9 @@
-<!-- <!DOCTYPE html>
+<!-- <!DOCTYPE html -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CSS Only Windows 98</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
@@ -80,7 +80,7 @@
             <div class="text">Internet Explorer</div>
         </label>
         <label for="windows-documents-input" class="desktop-item">
-            <div class="icon"><img
+            <div class="icon"><iTmg
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAAAD///8AgID//wAA//8AAP8AAICAgABjy1kBAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhgXAzSeRYh6AAABI0lEQVQ4y6XUwWrCQBAG4OQRmiy9uwmB3qJbvHcZ3fQBSs/mGYTVaxB6Flr6AHvzKZ3ZTQJJZgvS/6T5+XBmFJPkX0ljRVZHABR8IUDXPIA5SZ8oAosZoUfwBvAxI+m+wgjY2cuUiBZzAPg8niZkBEc7JSOw1hChQUIxAmMNklecpB5EANacaRd87waBA38ZY+03dKC3VeV6geDSoDhDU3oyCEEPfgNoiPQCQQfwHkBHpBdCvmRSyp+rvPpXeuuGA06TFa4/4CxrrfDrbJfJS7zYc7VMXuLFOFFIPHLKiCLTWDDisJE1K1Yb/HBOtGsclx1L0UnYRVxE5DFBt+IX8QW3iIqIlYqIlgp+kSQy1uPC/0q4sULxuLgt44tELRP5i/gzd7p32fYC8TrqAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUyLTA0OjAwbzzW+wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1Mi0wNDowMB5hbkcAAAAASUVORK5CYII="
                     alt="" /> </div>
             <div class="text">Documents</div>
@@ -593,23 +593,32 @@
 </form>
 <!-- partial -->
 
-<!-- Boot Terminal Message -->
-<!-- ===== FULL-SCREEN BOOT TERMINAL (opens on page load) ===== -->
-<div id="boot-terminal" class="window" role="dialog" aria-modal="true" aria-hidden="true">
-  <div class="title-bar">
-    <div class="title-bar-text">Alysha Pursley — ePortfolio (Terminal)</div>
-    <div class="title-bar-controls">
-      <!-- Keep your original control button markup if it uses <button aria-label="..."> -->
-      <button aria-label="Minimize" id="boot-minimize"></button>
-      <button aria-label="Maximize" id="boot-maximize"></button>
-      <button aria-label="Close" id="boot-close"></button>
-    </div>
-  </div>
-  <div class="window-body">
-    <pre id="boot-terminal-text"></pre>
-  </div>
-</div>
 
+    
+  // --- Typewriter effect (click to skip to end) ---
+  const el = document.getElementById('terminal');
+  let i = 0;
+  let skipping = false;
+
+  function type() {
+    if (skipping) {
+      el.textContent += msg.slice(i);
+      i = msg.length;
+      return;
+    }
+    if (i < msg.length) {
+      el.textContent += msg.charAt(i++);
+      setTimeout(type, 14);  // typing speed (ms per char)
+    }
+  }
+
+  // Click anywhere to finish typing instantly
+  document.addEventListener('click', () => { skipping = true; type(); }, { once:true });
+
+  // Start typing
+  setTimeout(type, 250);
+})();
+</script>   
 </body>
 
 </html>
