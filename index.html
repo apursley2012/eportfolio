@@ -592,34 +592,118 @@
     </div>
 </form>
 <!-- partial -->
+<script>
+(function() {
+  // ===== Timing =====
+  var startDelay = 700;   // 700 ms = 0.7 seconds before typing starts
+  var typeSpeed  = 28;    // ms per character
 
+  // ===== Welcome/Help text (no promise; user decides when to open SA) =====
+  var text =
+"Alysha Pursley — Software Development ePortfolio\n\
+-------------------------------------------------\n\
+Welcome! This site is a fully interactive Windows-98-style desktop.\n\
+\n\
+How to use it:\n\
+  • Double-click desktop icons, or click the Start button to open items.\n\
+  • Narratives (Enhancements 1–3) open in a Notepad-style document window.\n\
+  • Code links open inside the Internet Explorer window (embedded GitHub page).\n\
+  • Use the window controls:  _  (minimize),  □  (maximize/restore),  X  (close).\n\
+\n\
+Start here:\n\
+  1) Read the Professional Self-Assessment (first document in the Start menu).\n\
+  2) Explore Enhancement One, Two, and Three — each has its narrative and code.\n\
+  3) Use the taskbar to switch windows; you can maximize any window for focus.\n\
+\n\
+Tip: This welcome terminal starts full screen so you see instructions first.\n\
+     Minimize or close it to view the desktop.\n\
+\n\
+Press Enter or select “Open Professional Self-Assessment” to begin.\n";
 
-    
-  // --- Typewriter effect (click to skip to end) ---
-  const el = document.getElementById('terminal');
-  let i = 0;
-  let skipping = false;
+  // ===== helpers =====
+  function $(id) { return document.getElementById(id); }
 
-  function type() {
-    if (skipping) {
-      el.textContent += msg.slice(i);
-      i = msg.length;
-      return;
-    }
-    if (i < msg.length) {
-      el.textContent += msg.charAt(i++);
-      setTimeout(type, 14);  // typing speed (ms per char)
+  function typeInto(el, str, idx, onDone) {
+    if (idx >= str.length) { onDone && onDone(); return; }
+    el.textContent += str.charAt(idx);
+    window.setTimeout(function() { typeInto(el, str, idx + 1, onDone); }, typeSpeed);
+  }
+
+  function revealActions() {
+    var btn  = $("open-sa-btn");
+    var link = $("open-sa-link");
+    if (btn)  btn.style.display  = "inline-block";
+    if (link) link.style.display = "inline";
+    // Move focus to the button so keyboard users can just hit Enter/Space
+    if (btn)  btn.focus();
+  }
+
+  function openSelfAssessment() {
+    // Make SA window visible
+    var sa = $("windows-sa-input");
+    if (sa) sa.checked = true;
+
+    // Bring SA on top
+    var saTop = $("windows-sa-input-on-top");
+    if (saTop) saTop.checked = true;
+
+    // Maximize SA
+    var saMax = $("windows-sa-input-max");
+    if (saMax) saMax.checked = true;
+
+    // Minimize the boot terminal
+    var bootMin = $("windows-boot-input-min");
+    if (bootMin) bootMin.checked = true;
+
+    // Optional: nudge focus into the doc
+    var frame = $("sa-frame");
+    if (frame) {
+      frame.addEventListener("load", function() {
+        try { frame.contentWindow.focus(); } catch(e){}
+      }, { once: true });
     }
   }
 
-  // Click anywhere to finish typing instantly
-  document.addEventListener('click', () => { skipping = true; type(); }, { once:true });
+  function startTyping() {
+    var el = $("boot-typed");
+    if (!el) return;
+    el.textContent = "";
+    typeInto(el, text, 0, function() {
+      // After typing completes, just reveal the actions (no auto-open)
+      revealActions();
+    });
+  }
 
-  // Start typing
-  setTimeout(type, 250);
+  // Click handlers for both the button and link
+  document.addEventListener("click", function(e) {
+    if (e.target && (e.target.id === "open-sa-btn" || e.target.id === "open-sa-link")) {
+      e.preventDefault();
+      openSelfAssessment();
+    }
+  });
+
+  // Keyboard: pressing Enter opens SA after typing
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      // Only respond after actions are revealed (button visible)
+      var btn = $("open-sa-btn");
+      if (btn && btn.style.display !== "none") {
+        openSelfAssessment();
+      }
+    }
+  });
+
+  // Kick off after a short pause when DOM is ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(startTyping, startDelay);
+    });
+  } else {
+    setTimeout(startTyping, startDelay);
+  }
 })();
-</script>   
+</script>
+
 </body>
 
 </html>
--->
