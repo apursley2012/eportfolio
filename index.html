@@ -593,6 +593,23 @@
 </form>
 <!-- partial -->
 
+<!-- Boot Terminal Message -->
+<!-- ===== FULL-SCREEN BOOT TERMINAL (opens on page load) ===== -->
+<div id="boot-terminal" class="window" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="title-bar">
+    <div class="title-bar-text">Alysha Pursley — ePortfolio (Terminal)</div>
+    <div class="title-bar-controls">
+      <!-- Keep your original control button markup if it uses <button aria-label="..."> -->
+      <button aria-label="Minimize" id="boot-minimize"></button>
+      <button aria-label="Maximize" id="boot-maximize"></button>
+      <button aria-label="Close" id="boot-close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <pre id="boot-terminal-text"></pre>
+  </div>
+</div>
+
 </body>
 
 </html>
