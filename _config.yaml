@@ -1,3 +1,5 @@
 title: "Alysha Pursley's ePortfolio"
 description: "Professional portfolio showcasing artifacts, self-assessment, and code review"
 theme: jekyll-theme-hacker
+
+permalink: /:title/
