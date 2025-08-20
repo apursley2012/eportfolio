@@ -1,8 +1,263 @@
----
-layout: default
-title: Home
-permalink: /
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Self-Assessment</title>
+  <meta name="description" content="Professional Self-Assessment and skills overview for a front-end web developer/designer." />
+  <style>
+    /* minimal, readable defaults */
+    :root{
+      --text:#1b1b1b; --muted:#5a5a5a; --bg:#fff; --link:#0b63c4; --border:#e5e7eb;
+      --h:#0f172a; --accent:#0a7f49; --badge-bg:#f5f7f9; --badge-bd:#e5e7eb;
+      --max: 880px;
+    }
+    html,body{ background:var(--bg); color:var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Segoe UI Emoji", "Apple Color Emoji", sans-serif; }
+    body{ margin:0; line-height:1.6; }
+    header{ border-bottom:1px solid var(--border); background:#fafafa; }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:24px 16px; }
+    h1{ margin:0 0 6px; color:var(--h); line-height:1.2; font-size:clamp(1.6rem, 2.2vw + 1rem, 2.2rem); }
+    .lead{ color:var(--muted); margin:0; }
+    nav{ margin-top:10px; font-size:0.95rem; }
+    nav a{ color:var(--link); text-decoration:none; margin-right:12px; }
+    nav a:hover{ text-decoration:underline; }
+
+    main .wrap{ padding-top:28px; padding-bottom:48px; }
+    section{ margin:28px 0; }
+    h2{ color:var(--h); font-size:1.35rem; margin:0 0 8px; }
+    h3{ color:var(--h); font-size:1.05rem; margin:18px 0 6px; }
+    p{ margin:10px 0; }
+
+    /* skills */
+    .group{ border:1px solid var(--border); border-radius:10px; padding:16px; background:#fff; }
+    .skill-list, .plain-list{ list-style: none; padding-left:0; margin:8px 0 0; display:flex; flex-wrap:wrap; gap:8px; }
+    .skill-list li{ background:var(--badge-bg); border:1px solid var(--badge-bd); border-radius:16px; padding:6px 10px; font-size:0.95rem; }
+    .plain-list li{ padding-left:0; }
+
+    /* outcomes */
+    .outcome{ border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin:14px 0; background:#fff; }
+    .outcome em{ color:var(--muted); font-style:normal; }
+    .outcome .skills{ margin:10px 0 0; }
+    .outcome .skills li{ background:var(--badge-bg); border:1px solid var(--badge-bd); border-radius:16px; padding:6px 10px; display:inline-block; margin:4px 6px 0 0; }
+
+    /* helpers */
+    .note{ color:var(--muted); font-size:0.95rem; }
+    a.skip{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    a.skip:focus{ position:static; width:auto; height:auto; padding:6px 10px; background:#fff3cd; border:1px solid #ffe69c; border-radius:8px; }
+    footer{ border-top:1px solid var(--border); background:#fafafa; }
+    @media (max-width:600px){
+      .skill-list, .plain-list{ gap:6px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <header>
+    <div class="wrap">
+      <h1>Professional Self-Assessment</h1>
+      <p class="lead">Front-end web developer & designer · readable code, useful interfaces, everyday security</p>
+      <nav aria-label="Page">
+        <a href="#intro">Introduction</a>
+        <a href="#skills">Skills</a>
+        <a href="#outcomes">Course Outcomes</a>
+        <a href="#artifacts">Artifacts Summary</a>
+        <a href="#closing">Closing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="wrap">
+
+      <!-- INTRO -->
+      <section id="intro" aria-labelledby="intro-h">
+        <h2 id="intro-h">Introduction</h2>
+        <p>I’m a front-end web developer/designer. I care about interfaces that feel obvious, copy that reduces friction, and code a teammate can read in one pass. This program shifted me from “it runs” to “it reads well, behaves predictably, and respects the user.” I can work across the stack when needed, but my best work lives on the surface—structure, semantics, accessibility, and the small interaction details that build trust.</p>
+        <p>Coursework gave me the habits I use every day: separate concerns, name things clearly, keep functions small, and write down why I made a choice. Mid-program classes sharpened my approach to data structures and algorithms and to disciplined input/edge-case handling, so behavior is predictable instead of accidental. Later work tied those habits to the web: present results coherently, keep interfaces forgiving, and document decisions so teammates (and future me) can move quickly. Outside of class, running an online store pushed me to prefer simple UX, good defaults, and outputs you can act on.</p>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" aria-labelledby="skills-h">
+        <h2 id="skills-h">Skill Inventory</h2>
+
+        <div class="group">
+          <h3>Programming Proficiency — make intent obvious</h3>
+          <ul class="skill-list">
+            <li>Language Portability (C++ → Python)</li>
+            <li>Python</li><li>C++</li>
+            <li>Problem-Solving</li>
+            <li>Function Abstraction</li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3>Software Design & Architecture — design for change</h3>
+          <ul class="skill-list">
+            <li>Software Design Principles</li>
+            <li>Modular Architecture & Design</li>
+            <li>Separation of Concerns</li>
+            <li>Code Reusability</li>
+            <li>Basic Class Design</li>
+            <li>Persistent Storage Design</li>
+            <li>Basic Database Schema Design</li>
+            <li>Expanded System Scalability</li>
+            <li>Preserved Backward Compatibility</li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3>Data Handling & Structures — predictable data, predictable behavior</h3>
+          <ul class="skill-list">
+            <li>File I/O Handling</li>
+            <li>Database Integration</li>
+            <li>SQL Query Construction</li>
+            <li>Safe Data Access Patterns</li>
+            <li>Safe Dictionary Access</li>
+            <li>Use of <code>defaultdict</code></li>
+            <li>String Normalization</li>
+            <li>Input Validation Implementation</li>
+            <li>Input Handling Enhancements</li>
+            <li>Error Handling in Data Operations</li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3>Data Processing & Output — useful results, not raw dumps</h3>
+          <ul class="skill-list">
+            <li>Data Sorting</li>
+            <li>Alphabetical Sorting Logic</li>
+            <li>Frequency-Based Sorting</li>
+            <li>Data Retrieval and Display</li>
+            <li>Histogram Output</li>
+            <li>Search Functionality</li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3>Interface Design & Usability — the part people feel</h3>
+          <ul class="skill-list">
+            <li>Menu Design</li>
+            <li>Menu-Driven Interface</li>
+            <li>Menu-Driven Interface Expansion</li>
+            <li>Expanded Menu System</li>
+            <li>User Experience Improvements</li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3>Documentation & Readability — explain the why</h3>
+          <ul class="skill-list">
+            <li>Code Documentation</li>
+            <li>Commenting and Readability</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- OUTCOMES -->
+      <section id="outcomes" aria-labelledby="outcomes-h">
+        <h2 id="outcomes-h">Course Outcomes (official text + the skills I use for each)</h2>
+
+        <article class="outcome">
+          <h3>Outcome 1 — Collaboration</h3>
+          <p><em>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science.</em></p>
+          <ul class="skills">
+            <li>Modular Architecture & Design</li>
+            <li>Separation of Concerns</li>
+            <li>Code Reusability</li>
+            <li>Preserved Backward Compatibility</li>
+            <li>Code Documentation</li>
+            <li>Commenting and Readability</li>
+            <li>Data Retrieval and Display</li>
+            <li>User Experience Improvements</li>
+          </ul>
+        </article>
+
+        <article class="outcome">
+          <h3>Outcome 2 — Professional Communication</h3>
+          <p><em>Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.</em></p>
+          <ul class="skills">
+            <li>Code Documentation</li>
+            <li>Commenting and Readability</li>
+            <li>Data Retrieval and Display</li>
+            <li>Histogram Output</li>
+            <li>Menu Design</li>
+            <li>Menu-Driven Interface</li>
+            <li>Menu-Driven Interface Expansion</li>
+          </ul>
+        </article>
+
+        <article class="outcome">
+          <h3>Outcome 3 — Algorithms & Trade-offs</h3>
+          <p><em>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices.</em></p>
+          <ul class="skills">
+            <li>Data Sorting</li>
+            <li>Alphabetical Sorting Logic</li>
+            <li>Frequency-Based Sorting</li>
+            <li>Search Functionality</li>
+            <li>Use of <code>defaultdict</code></li>
+            <li>Safe Dictionary Access</li>
+            <li>String Normalization</li>
+            <li>Function Abstraction</li>
+            <li>Problem-Solving</li>
+            <li>Input Handling Enhancements</li>
+          </ul>
+        </article>
+
+        <article class="outcome">
+          <h3>Outcome 4 — Techniques, Skills, Tools</h3>
+          <p><em>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.</em></p>
+          <ul class="skills">
+            <li>Language Portability (C++ → Python)</li>
+            <li>Python</li><li>C++</li>
+            <li>Persistent Storage Design</li>
+            <li>Database Integration</li>
+            <li>SQL Query Construction</li>
+            <li>Basic Database Schema Design</li>
+            <li>File I/O Handling</li>
+            <li>Expanded System Scalability</li>
+            <li>Modular Architecture & Design</li>
+          </ul>
+        </article>
+
+        <article class="outcome">
+          <h3>Outcome 5 — Security Mindset</h3>
+          <p><em>Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.</em></p>
+          <ul class="skills">
+            <li>Input Validation Implementation</li>
+            <li>String Normalization</li>
+            <li>Safe Data Access Patterns</li>
+            <li>Error Handling in Data Operations</li>
+            <li>File I/O Handling</li>
+            <li>SQL Query Construction (parameterized)</li>
+            <li>Separation of Concerns</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- ARTIFACTS SUMMARY -->
+      <section id="artifacts" aria-labelledby="artifacts-h">
+        <h2 id="artifacts-h">How My Artifacts Fit Together</h2>
+        <p>I advanced one project in three steps that mirror real development: first, a readability-focused refactor (language portability to Python, modular design, separation of concerns); second, practical processing people actually use (alphabetical and frequency sorting, consistent search, and histogram-style summaries); third, persistence with a small, well-scoped schema and parameterized SQL so behavior stays consistent across runs. Even though my focus is the front end, this path shows how design choices, algorithms, and data handling connect to clearer outputs and better user experience.</p>
+      </section>
+
+      <!-- CLOSING -->
+      <section id="closing" aria-labelledby="closing-h">
+        <h2 id="closing-h">Closing</h2>
+        <p>I’m aiming for front-end web developer/designer roles where semantic structure, accessible patterns, readable code, and thoughtful UI copy matter. I can step into full-stack work when it helps the product, but I’m at my best where design and engineering meet—turning requirements into interfaces that are easy to understand, test, and maintain.</p>
+        <p class="note">Tip: Link this page at the top of your ePortfolio navigation so it’s the first thing viewers see.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="note">© Your Name — Professional Self-Assessment</p>
+    </div>
+  </footer>
+</body>
+</html>
 
 # Computer Science ePortfolio
 
