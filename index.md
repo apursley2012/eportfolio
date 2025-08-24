@@ -15,14 +15,17 @@ title: Home
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DotGothic16&family=Fira+Code:wght@300..700&family=Handjet:wght@100..900&family=Jersey+15&family=Jersey+20&family=Jersey+25&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
 
-<style> .press-scope h1{
+<style> 
+  .press-scope h1{
     font-family: "Press Start 2P", system-ui, monospace;
     text-align: center;
     font-weight: 400;        /* Press Start 2P only ships as 400 */
     letter-spacing: .5px;
     line-height: 1.25;
   }
+  
 </style>
+
  
 <!-- Typed header -->
 <center> <h1 id="typed-header">Welcome to my ePortfolio</h1></center>
@@ -190,6 +193,175 @@ Completing my capstone truly brought my entire degree together. It challenged me
       </details>
     </article>
   </div>
+
+
+<!-- ===== Tech Matrix (Hacker theme) ===== -->
+<style>
+  .tech-matrix { --accent:#39ff14; --chip-bg:rgba(57,255,20,.08); }
+  .tech-matrix * { box-sizing: border-box; }
+  .tech-matrix { margin: 1.25rem 0 2rem; }
+  .tech-matrix h2 { margin: 0 0 .75rem; }
+
+  /* Category blocks */
+  .tm-block {
+    margin: .6rem 0 1rem;
+    border-left: 4px solid var(--accent);
+    padding-left: .75rem;
+  }
+  .tm-block details { margin: 0; }
+  .tm-block summary {
+    display: flex; align-items: center; gap: .5rem;
+    cursor: pointer; user-select: none; font-weight: 600;
+    list-style: none; outline: none;
+  }
+  .tm-block summary::-webkit-details-marker { display: none; }
+  .tm-block summary::before { content: "▸"; margin-right: .25rem; }
+  .tm-block[open] summary::before,
+  .tm-block details[open] summary::before { content: "▾"; }
+
+  .tm-desc { margin: .2rem 0 .6rem; font-size: .92rem; opacity: .85; }
+
+  /* Chips */
+  .tm-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .tm-chip {
+    border: 1px solid var(--accent);
+    background: var(--chip-bg);
+    padding: .28rem .6rem;
+    border-radius: 999px;
+    font-size: .92rem;
+    max-width: 100%;
+    white-space: normal;           /* wrap long labels */
+    overflow-wrap: anywhere;       /* prevent overflow */
+  }
+
+  /* Optional: make the first two sections open by default on wide screens */
+  @media (min-width: 900px) {
+    .tm-block.open-desktop details { /* just a hook for you to add "open" in markup if you want */ }
+  }
+</style>
+
+<section class="tech-matrix" aria-labelledby="tech-title">
+  <h2 id="tech-title">Tech & Languages</h2>
+<details>
+  <!-- Languages -->
+  <div class="tm-block">
+    <details open>
+      <summary>🧠 Languages</summary>
+      <p class="tm-desc">Core languages I’ve used across coursework and projects.</p>
+      <div class="tm-chips">
+        <span class="tm-chip">Python</span>
+        <span class="tm-chip">Java</span>
+        <span class="tm-chip">C++</span>
+        <span class="tm-chip">C</span>
+        <span class="tm-chip">JavaScript</span>
+        <span class="tm-chip">HTML</span>
+        <span class="tm-chip">CSS</span>
+        <span class="tm-chip">SQL</span>
+        <span class="tm-chip">R</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- Front-end -->
+  <div class="tm-block">
+    <details>
+      <summary>🌐 Front-End</summary>
+      <p class="tm-desc">Client-side frameworks and patterns.</p>
+      <div class="tm-chips">
+        <span class="tm-chip">Vue</span>
+        <span class="tm-chip">SPA</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- Databases -->
+  <div class="tm-block">
+    <details>
+      <summary>🗄️ Databases</summary>
+      <p class="tm-desc">Persistence used in coursework and projects.</p>
+      <div class="tm-chips">
+        <span class="tm-chip">SQLite</span>
+        <span class="tm-chip">MongoDB</span>
+        <span class="tm-chip">MySQL</span>
+        <span class="tm-chip">SQL Server</span>
+        <span class="tm-chip">Oracle</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- Cloud & Hosting -->
+  <div class="tm-block">
+    <details>
+      <summary>☁️ Cloud &amp; Hosting</summary>
+      <div class="tm-chips">
+        <span class="tm-chip">AWS</span>
+        <span class="tm-chip">GCP</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- Dev Tools -->
+  <div class="tm-block">
+    <details>
+      <summary>🛠️ Dev Tools</summary>
+      <p class="tm-desc">Everyday tools for building and reviewing code.</p>
+      <div class="tm-chips">
+        <span class="tm-chip">Git</span>
+        <span class="tm-chip">GitHub</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- CMS & E-commerce -->
+  <div class="tm-block">
+    <details>
+      <summary>🛍️ CMS &amp; E-commerce</summary>
+      <div class="tm-chips">
+        <span class="tm-chip">WordPress</span>
+        <span class="tm-chip">WooCommerce</span>
+        <span class="tm-chip">Wix</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- Platforms & OS -->
+  <div class="tm-block">
+    <details>
+      <summary>💻 Platforms &amp; OS</summary>
+      <div class="tm-chips">
+        <span class="tm-chip">Linux</span>
+        <span class="tm-chip">Windows</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- Security & Analytics -->
+  <div class="tm-block">
+    <details>
+      <summary>🔐 Security &amp; Analytics</summary>
+      <div class="tm-chips">
+        <span class="tm-chip">JWT</span>
+        <span class="tm-chip">TLS</span>
+        <span class="tm-chip">SEO</span>
+        <span class="tm-chip">SEM</span>
+      </div>
+    </details>
+  </div>
+
+  <!-- Project & Methods -->
+  <div class="tm-block">
+    <details>
+      <summary>📎 Project &amp; Methods</summary>
+      <div class="tm-chips">
+        <span class="tm-chip">Agile</span>
+        <span class="tm-chip">UML</span>
+        <span class="tm-chip">MVC</span>
+        <span class="tm-chip">Design Patterns</span>
+      </div>
+    </details>
+  </div>
+</details>
+</section>
 
 
 
