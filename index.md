@@ -162,6 +162,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
         <span class="chip">Histogram Output</span>
         <span class="chip">Search Functionality</span>
       </div>
+      </details>
     </article>
     <article class="skill-card">
       <h3>Interface Design & Usability</h3>
