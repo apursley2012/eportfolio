@@ -14,8 +14,7 @@ title: Home
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DotGothic16&family=Fira+Code:wght@300..700&family=Handjet:wght@100..900&family=Jersey+15&family=Jersey+20&family=Jersey+25&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
-<style>
-  
+
  .press-scope h1{
     font-family: "Press Start 2P", system-ui, monospace;
     text-align: center;
@@ -77,7 +76,6 @@ title: Home
     @media (max-width: 420px) {
       .chip { font-size: .85rem; }
     }
-</style>
 
 <!-- Typed header -->
 <center> <h1 id="typed-header">Welcome to my ePortfolio</h1></center>
