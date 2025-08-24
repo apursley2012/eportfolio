@@ -1,6 +1,5 @@
 <!-- Enhancement 1 Narrative — Software Design & Engineering -->
-<h1>3‑2 Milestone Two: Software Design &amp; Engineering Enhancement</h1>
-<p style="text-align:center;"><strong>Alysha Pursley</strong><br/>Southern New Hampshire University<br/>CS499: Computer Science Capstone<br/>Professor Ramsey Kraya<br/>July 13, 2025</p>
+<h1>Software Design &amp; Engineering Enhancement</h1>
 
 <h2>Artifact Overview</h2>
 <p>
