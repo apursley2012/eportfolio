@@ -1,3 +1,8 @@
+---
+layout: default
+title: Enhancement One
+---
+
 <!-- Enhancement 1 Narrative — Software Design & Engineering -->
 # Software Design &amp; Engineering Enhancement
 
