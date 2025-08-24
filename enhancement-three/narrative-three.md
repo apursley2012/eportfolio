@@ -1,3 +1,8 @@
+---
+layout: default
+title: Enhancement Three
+---
+
 # Database Enhancement
 
 ## Artifact Overview
