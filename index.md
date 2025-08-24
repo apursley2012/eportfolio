@@ -14,6 +14,8 @@ title: Home
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DotGothic16&family=Fira+Code:wght@300..700&family=Handjet:wght@100..900&family=Jersey+15&family=Jersey+20&family=Jersey+25&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+<!-- Typed header -->
+<h1 id="typed-header">Welcome to my ePortfolio</h1>
 
 # About Me
 Hello! My name is Alysha Pursley, and I am currently pursuing a degree in Computer Science with a focus on Software Development at Southern New Hampshire University. I have a strong passion for creating engaging, user-friendly interfaces and developing websites and applications that are both functional and visually appealing. My goal is to become a skilled front-end or full-stack developer, where I can bring ideas to life through innovative design and efficient coding. Throughout my studies, I’ve gained valuable experience in various programming languages and development tools, which I am eager to apply in real-world projects. This portfolio reflects my dedication, growth, and the skills I’ve cultivated so far, and I look forward to contributing to exciting tech solutions in the future.
@@ -115,8 +117,6 @@ Completing my capstone truly brought my entire degree together. It challenged me
         <span class="chip">Preserved Backward Compatibility</span>
       </div>
     </article>
-
-    <!-- 3. Data Handling & Structures -->
     <article class="skill-card">
       <h3><span class="icon">🗄️</span> Data Handling & Structures</h3>
       <p class="sub">Moving, storing, and guarding data responsibly.</p>
@@ -133,8 +133,6 @@ Completing my capstone truly brought my entire degree together. It challenged me
         <span class="chip">Error Handling in Data Operations</span>
       </div>
     </article>
-
-    <!-- 4. Data Processing & Output -->
     <article class="skill-card">
       <h3><span class="icon">📊</span> Data Processing & Output</h3>
       <p class="sub">Turning raw values into results people can use.</p>
@@ -147,8 +145,6 @@ Completing my capstone truly brought my entire degree together. It challenged me
         <span class="chip">Search Functionality</span>
       </div>
     </article>
-
-    <!-- 5. Interface Design & Usability -->
     <article class="skill-card">
       <h3><span class="icon">🧭</span> Interface Design & Usability</h3>
       <p class="sub">Flows that are predictable and easy to navigate.</p>
@@ -160,8 +156,6 @@ Completing my capstone truly brought my entire degree together. It challenged me
         <span class="chip">User Experience Improvements</span>
       </div>
     </article>
-
-    <!-- 6. Documentation & Readability -->
     <article class="skill-card">
       <h3><span class="icon">📝</span> Documentation & Readability</h3>
       <p class="sub">Code that explains itself and is easy to hand off.</p>
@@ -179,8 +173,6 @@ Completing my capstone truly brought my entire degree together. It challenged me
   </details>
 </section>
 
-<!-- Typed header -->
-<h1 id="typed-header">Welcome to my ePortfolio</h1>
 
 
 <script>
