@@ -191,11 +191,6 @@ Completing my capstone truly brought my entire degree together. It challenged me
     </article>
   </div>
 
-  <!-- Optional: compact mode with collapsible chips (keep or remove) -->
-  <details>
-    <summary>Prefer a compact view?</summary>
-    <p class="sub">Use the disclosure triangles on each card (above) to collapse long chip lists if you want a tighter page.</p>
-  </details>
 
 
 
