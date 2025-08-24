@@ -9,7 +9,7 @@ title: Home
   <a href="./enhancement-1.md">Enhancement 1</a> |
   <a href="./enhancement-2.md">Enhancement 2</a> |
   <a href="./enhancement-3.md">Enhancement 3</a> |
-   <a href="https://corner-grocer-alyshaspradlin.replit.app">Completed Enhancements Demo</a> |
+   <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
   </nav>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
