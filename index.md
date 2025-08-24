@@ -242,7 +242,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
 <section class="tech-matrix" aria-labelledby="tech-title">
   <h2 id="tech-title">Tech & Languages</h2>
-<details>
+<details opem>
   <!-- Languages -->
   <div class="tm-block">
     <details open>
@@ -264,7 +264,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- Front-end -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>🌐 Front-End</summary>
       <p class="tm-desc">Client-side frameworks and patterns.</p>
       <div class="tm-chips">
@@ -276,7 +276,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- Databases -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>🗄️ Databases</summary>
       <p class="tm-desc">Persistence used in coursework and projects.</p>
       <div class="tm-chips">
@@ -291,7 +291,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- Cloud & Hosting -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>☁️ Cloud &amp; Hosting</summary>
       <div class="tm-chips">
         <span class="tm-chip">AWS</span>
@@ -302,7 +302,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- Dev Tools -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>🛠️ Dev Tools</summary>
       <p class="tm-desc">Everyday tools for building and reviewing code.</p>
       <div class="tm-chips">
@@ -314,7 +314,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- CMS & E-commerce -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>🛍️ CMS &amp; E-commerce</summary>
       <div class="tm-chips">
         <span class="tm-chip">WordPress</span>
@@ -326,7 +326,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- Platforms & OS -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>💻 Platforms &amp; OS</summary>
       <div class="tm-chips">
         <span class="tm-chip">Linux</span>
@@ -337,7 +337,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- Security & Analytics -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>🔐 Security &amp; Analytics</summary>
       <div class="tm-chips">
         <span class="tm-chip">JWT</span>
@@ -350,7 +350,7 @@ Completing my capstone truly brought my entire degree together. It challenged me
 
   <!-- Project & Methods -->
   <div class="tm-block">
-    <details>
+    <details open>
       <summary>📎 Project &amp; Methods</summary>
       <div class="tm-chips">
         <span class="tm-chip">Agile</span>
