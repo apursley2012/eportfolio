@@ -14,7 +14,6 @@ title: Home
 <!-- Typed header -->
 <h1 id="typed-header">Welcome to my ePortfolio</h1>
 
-<p>This site is built with the Hacker theme. The header above types out once when the page loads.</p>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
