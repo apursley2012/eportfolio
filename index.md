@@ -475,7 +475,7 @@ I kept everything centered around one project, building it up layer by layer: fi
     <details class="ocp-item">
       <summary>CS-360 — Mobile Architecture &amp; Programming</summary>
       <div class="ocp-body">
-        <p><strong>Project:</strong>Event-tracking app, which I named PunctuOwlity; built using Android Studio's GUI and emulator, written with Java and SQLite, including full UI design, lifecycle management, and a marketing/monetization plan.</p>
+        <p><strong>Project:</strong> Event-tracking app, which I named PunctuOwlity; built using Android Studio's GUI and emulator, written with Java and SQLite, including full UI design, lifecycle management, and a marketing/monetization plan.</p>
         <ul class="ocp-skilllist">
           <li class="chip">Android Lifecycle</li>
           <li class="chip">UI Design</li>
