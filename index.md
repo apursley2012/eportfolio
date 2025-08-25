@@ -3,17 +3,18 @@ layout: default
 title: Home
 ---
 
-<!-- Simple nav -->
-<nav style="margin-bottom: 20px;">
-  <a href="./index.md">Home</a> |
-  <a href="/enhancement-one-narrative/">Enhancement 1 Narrative</a> |
-  <a href="/enhancement-two-narrative/">Enhancement 2 Narrative</a> |
-  <a href="/enhancement-three-narrative/">Enhancement 3 Narrative</a> |
-   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-one">Enhancement 1 Project Code</a> |
+<nav style="margin-bottom:20px;">
+  <a href="{{ '/' | relative_url }}">Home</a> |
+  <a href="{{ '/enhancement-one-narrative/'   | relative_url }}">Enhancement 1 Narrative</a> |
+  <a href="{{ '/enhancement-two-narrative/'   | relative_url }}">Enhancement 2 Narrative</a> |
+  <a href="{{ '/enhancement-three-narrative/' | relative_url }}">Enhancement 3 Narrative</a> |
+  <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-one">Enhancement 1 Project Code</a> |
   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-two">Enhancement 2 Project Code</a> |
   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-three">Enhancement 3 Project Code</a> |
-   <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
-  </nav>
+  <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
+</nav>
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DotGothic16&family=Fira+Code:wght@300..700&family=Handjet:wght@100..900&family=Jersey+15&family=Jersey+20&family=Jersey+25&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
