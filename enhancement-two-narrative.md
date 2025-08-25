@@ -15,6 +15,7 @@ permalink: /enhancement-two-narrative/
   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-two">Enhancement 2 Project</a> |
   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-three">Enhancement 3 Project</a> |
    <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> 
+</nav>
 
 # Algorithms and Data Structures Enhancement
 
