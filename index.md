@@ -3,7 +3,17 @@ layout: default
 title: Home
 ---
 
-
+<!-- Simple nav -->
+<nav style="margin-bottom: 20px;">
+  <a href="./index.html">Home</a> |
+  <a href="https://github.com/apursley2012/eportfolio/blob/main/enhancement-one/narrative-one.md">Enhancement 1 Narrative</a> |
+  <a href="https://github.com/apursley2012/eportfolio/blob/main/enhancement-two/narrative-two.md">Enhancement 2 Narrative</a> |
+  <a href="https://github.com/apursley2012/eportfolio/blob/main/enhancement-three/narrative-three.md">Enhancement 3 Narrative</a> |
+   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-one">Enhancement 1 Project Code</a> |
+  <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-two">Enhancement 2 Project Code</a> |
+  <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-three">Enhancement 3 Project Code</a> |
+   <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
+  </nav>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DotGothic16&family=Fira+Code:wght@300..700&family=Handjet:wght@100..900&family=Jersey+15&family=Jersey+20&family=Jersey+25&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
@@ -560,7 +570,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function type() {
     el.textContent = text.slice(0, i++);
     if (i <= text.length) {
-      setTimeout(type, 120); // speed (ms per char)
+      setTimeout(type, 50); // speed (ms per char)
     }
   }
 
