@@ -790,7 +790,7 @@ I kept everything centered around one project, building it up layer by layer: fi
     <details class="ocp-item">
       <summary>CS-330 — Computer Graphics &amp; Visualization</summary>
       <div class="ocp-body">
-        <p><strong>Project:</strong> OpenGL 2D interface with interactive elements. You can view the repo and projects for this course <a href="https://github.com/apursley2012/CS330-Computer-Graphics-Visualization"> here </a>.</p>
+        <p><strong>Project:</strong> OpenGL 2D interface with interactive elements. You can view the repo and projects for this course <a href="https://github.com/apursley2012/CS330-Computer-Graphics-Visualization"> here </a>.</p> 
         <ul class="ocp-skilllist">
           <li class="chip">Rendering Pipeline</li>
           <li class="chip">Geometric Transformations</li>
