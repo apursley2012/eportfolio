@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Enhancement Three
+title: Enhancement Three Narrative
+permalink: /enhancement-three-narrative/
 ---
 
 # Database Enhancement
