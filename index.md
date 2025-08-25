@@ -32,7 +32,7 @@ Completing my Computer Science program and assembling this ePortfolio has been a
 ================================= -->
 <section id="reviews" class="reviews-carousel" aria-labelledby="reviews-title">
   <h2 id="reviews-title">Reviews &amp; Instructor Feedback</h2>
-  <p class="rc-intro">Highlights from course feedback. Stars are based on letter grade (A=★★★★★, B=★★★★, C=★★★, D=★★, F=★).</p>
+  <p class="rc-intro">Highlights from course feedback. Stars are based on letter grade<br> (A=★★★★★, B=★★★★, C=★★★, D=★★, F=★).</p>
 
   <style>
     .reviews-carousel{
