@@ -695,7 +695,7 @@ I kept everything centered around one project, building it up layer by layer: fi
   </div>
 
   <div class="ocp-list" id="ocp-list">
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-250 — Software Development Lifecycle</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> SDLC plan with risk analysis, use cases, and maintenance strategy for a car-rental system. You can view the repo and projects for this course  <a href= "https://github.com/apursley2012/CS250-SDLC-Program">here</a>.
@@ -709,7 +709,7 @@ I kept everything centered around one project, building it up layer by layer: fi
         </ul>
       </div>
     </details>
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-305 — Software Security</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> Security risk analysis for an online banking app with threat modeling and countermeasures.</p>
@@ -723,7 +723,7 @@ I kept everything centered around one project, building it up layer by layer: fi
         </ul>
       </div>
     </details>
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-360 — Mobile Architecture &amp; Programming</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> Event-tracking app, which I named PunctuOwlity; built using Android Studio's GUI and emulator, written with Java and SQLite, including full UI design, lifecycle management, and a marketing/monetization plan.</p>
@@ -736,7 +736,7 @@ I kept everything centered around one project, building it up layer by layer: fi
         </ul>
       </div>
     </details>
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-340 — Client/Server Development</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> RESTful API with Node.js/Express and MongoDB backend; CRUD frontend; validated with Postman.</p>
@@ -749,7 +749,7 @@ I kept everything centered around one project, building it up layer by layer: fi
         </ul>
       </div>
     </details>
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-320 — Software Testing, Automation, QA</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> Test plan + unit tests (Python unittest) for a file-handling program.</p>
@@ -761,7 +761,7 @@ I kept everything centered around one project, building it up layer by layer: fi
         </ul>
       </div>
     </details>
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-201 — Data Structures &amp; Algorithms</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> Merge/Quick/Bubble sorts, DFS/BFS, and a basic hash table in C++.</p>
@@ -774,7 +774,7 @@ I kept everything centered around one project, building it up layer by layer: fi
         </ul>
       </div>
     </details>
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-230 — Operating Platforms Systems</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> “Draw It or Lose It” application design project, demonstrating software architecture decisions, platform considerations, and effective communication of design ideas.You can view the course repo and projects <a href="https://github.com/apursley2012/CS230_Operating_Platforms_Portfolio">here</a>.</p>
@@ -787,7 +787,7 @@ I kept everything centered around one project, building it up layer by layer: fi
         </ul>
       </div>
     </details>
-    <details class="ocp-item">
+    <details class="ocp-item" open>
       <summary>CS-330 — Computer Graphics &amp; Visualization</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> OpenGL 2D interface with interactive elements. You can view the repo and projects for this course <a href="https://github.com/apursley2012/CS330-Computer-Graphics-Visualization"> here </a>.</p> 
