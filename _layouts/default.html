@@ -1,0 +1,38 @@
+<!-- _layouts/default.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title | escape }} — {{ site.title | escape }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- comment -%}
+  If you're using the Hacker theme, this pulls in its CSS automatically.
+  {%- endcomment -%}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <!-- Optional: small tweaks -->
+  <style>
+    /* keep theme background; minor rhythm */
+    main { max-width: 960px; margin: 0 auto; padding: 1rem; }
+    nav a { margin-right: .35rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Simple nav (optional; remove if you already render one in pages) -->
+    <nav style="margin-bottom: 20px;">
+      <a href="{{ '/' | relative_url }}">Home</a> |
+      <a href="{{ '/enhancement-one-narrative/'   | relative_url }}">Enhancement 1</a> |
+      <a href="{{ '/enhancement-two-narrative/'   | relative_url }}">Enhancement 2</a> |
+      <a href="{{ '/enhancement-three-narrative/' | relative_url }}">Enhancement 3</a> |
+       <a href="{{ '/enhancement-one/'   | relative_url }}">Enhancement 1</a> |
+      <a href="{{ '/enhancement-two/'   | relative_url }}">Enhancement 2</a> |
+      <a href="{{ '/enhancement-three/' | relative_url }}">Enhancement 3</a> |
+      <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
+    </nav>
+
+    {{ content }}
+  </main>
+</body>
+</html>
