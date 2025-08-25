@@ -311,6 +311,7 @@ I kept everything centered around one project, building it up layer by layer: fi
     <div>
       <h3 class="tech-cat">🛠️ Dev Tools &amp; Environments</h3>
       <ul class="chiplist">
+        <li class="chip">Android Studio</li>
         <li class="chip">Git</li>
         <li class="chip">GitHub</li>
         <li class="chip">GitLab</li>
