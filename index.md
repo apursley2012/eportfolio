@@ -93,6 +93,7 @@ In this ePortfolio, you will find three enhancements I made to previously writte
       line-height:1.2;
       font-size:1.05rem;
       display:flex; align-items:center; gap:.5rem;
+      white-space: wrap;
     }
     .skill-card h3 .icon{ font-size:1.2rem; }
     .skill-card p.sub{ margin:0 0 .75rem; font-size:.9rem; opacity:.85; }
