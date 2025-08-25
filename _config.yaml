@@ -1,4 +1,7 @@
-title: Alysha's ePortfolio
+title: ePortfolio
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme
+url: "https://alyshap2012.github.io"
+baseurl: "/ePortfolio"    
+permalink: pretty
