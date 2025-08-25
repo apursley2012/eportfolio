@@ -1,15 +1,15 @@
 ---
 layout: default
 title: Enhancement One Narrative 
-permalink: /enhancement-one-narrative/
+permalink: /enhancement-one-narrative
 ---
 
 <!-- Simple nav -->
 <nav style="margin-bottom: 20px;">
   <a href="https://apursley2012.github.io/eportfolio/">Home</a> |
-  <a href="./enhancement-one-narrative/">Enhancement 1 Narrative</a> |
-  <a href="./enhancement-two-narrative/">Enhancement 2 Narrative</a> |
-  <a href="./enhancement-three-narrative/">Enhancement 3 Narrative</a> |
+  <a href="./enhancement-one-narrative">Enhancement 1 Narrative</a> |
+  <a href="./enhancement-two-narrative">Enhancement 2 Narrative</a> |
+  <a href="./enhancement-three-narrative">Enhancement 3 Narrative</a> |
    <a href="./enhancement-one/">Enhancement 1 Project Code</a> |
   <a href="./enhancement-two/">Enhancement 2 Project Code</a> |
   <a href="./enhancement-three/">Enhancement 3 Project Code</a> |
