@@ -4,6 +4,18 @@ title: Enhancement Three Narrative
 permalink: /enhancement-three-narrative/
 ---
 
+
+<!-- Simple nav -->
+<nav style="margin-bottom: 20px;">
+  <a href="./index.html">Home</a> |
+  <a href="/enhancement-one-narrative/">Enhancement 1 Narrative</a> |
+  <a href="/enhancement-two-narrative/">Enhancement 2 Narrative</a> |
+  <a href="/enhancement-three-narrative/">Enhancement 3 Narrative</a> |
+   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-one">Enhancement 1 Project</a> |
+  <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-two">Enhancement 2 Project</a> |
+  <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-three">Enhancement 3 Project</a> |
+   <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> 
+
 # Database Enhancement
 
 ## Artifact Overview
