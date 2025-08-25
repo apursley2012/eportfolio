@@ -498,7 +498,7 @@ I kept everything centered around one project, building it up layer by layer: fi
       </div>
     </details>
     <details class="ocp-item">
-      <summary>CS-320 — Software Testing</summary>
+      <summary>CS-320 — Software Testing, Automation, QA</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> Test plan + unit tests (Python unittest) for a file-handling program.</p>
         <ul class="ocp-skilllist">
@@ -510,7 +510,7 @@ I kept everything centered around one project, building it up layer by layer: fi
       </div>
     </details>
     <details class="ocp-item">
-      <summary>CS-260 — Data Structures &amp; Algorithms</summary>
+      <summary>CS-201 — Data Structures &amp; Algorithms</summary>
       <div class="ocp-body">
         <p><strong>Project:</strong> Merge/Quick/Bubble sorts, DFS/BFS, and a basic hash table in C++.</p>
         <ul class="ocp-skilllist">
