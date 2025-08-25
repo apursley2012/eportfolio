@@ -1,7 +1,8 @@
 ---
- /enhancement-two-narrative/
+layout: default
+title: Enhancement Two Narrative 
+permalink: /enhancement-two-narrative/
 ---
-
 <!-- Simple nav -->
 <nav style="margin-bottom: 20px;">
   <a href="https://apursley2012.github.io/eportfolio/">Home</a> |
