@@ -41,7 +41,7 @@ Almost every course required me to troubleshoot logic errors, find bugs, and fig
 To name just a few other things I have learned throughout my degree program, collaboration, communication, and working with databases, data structures and algorithms are a few that stand out. Below you can find summaries on what I learned about each of these.
 
 ### Collaboration 
-I learned to structure code so other people can step in quickly: clear names, small focused functions, and comments that explain why a choice was made, not just what it does. Group work and code reviews taught me to keep logic modular and leave helpful breadcrumbs for the next person. Those habits map directly to Outcome 1 on collaboration and supported by the planning I captured for my capstone. 
+I learned to structure code so other people can quickly and easily understand exactly whats doing what: clear names, small focused functions, and comments that explain why a choice was made, not just what it does. I learned how to keep logic modular and leave helpful breadcrumbs for the next person. Those habits map directly to Outcome 1 on collaboration and supported by the planning I captured for my capstone. 
  
 ### Communication
 I got comfortable switching between technical detail and plain English—README instructions, user-facing prompts, and short demos that focus on outcomes first. My e-commerce work reinforced this: translating platform, hosting, and security work into clear updates for customers or vendors, and documenting steps so non-engineers can follow along. 
