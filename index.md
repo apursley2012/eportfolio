@@ -44,7 +44,7 @@ To name just a few other things I have learned throughout my degree program, col
 I learned to structure code so other people can quickly and easily understand exactly whats doing what: clear names, small focused functions, and comments that explain why a choice was made, not just what it does. I learned how to keep logic modular and leave helpful breadcrumbs for the next person. Those habits map directly to Outcome 1 on collaboration and supported by the planning I captured for my capstone. 
  
 ### Communication
-I got comfortable switching between technical detail and plain English—README instructions, user-facing prompts, and short demos that focus on outcomes first. My e-commerce work reinforced this: translating platform, hosting, and security work into clear updates for customers or vendors, and documenting steps so non-engineers can follow along. 
+I got comfortable switching between technical detail and plain English—README instructions, user-facing prompts, and short demos that focus on outcomes first. Some personal projects I've been working on helped reinforce this: translating platform, hosting, and security work into clear updates for customers or vendors, and documenting steps so non-engineers can follow along. 
  
 ### Data Structures and Algorithms 
 Across courses, I practiced choosing simple, predictable structures—lists, maps/dicts, queues—then measuring when sorting or searching variants actually help. I also learned to weigh clarity vs. performance and to use language-idiomatic tools (e.g., Python’s defaultdict, safe lookups) to keep behavior predictable. 
