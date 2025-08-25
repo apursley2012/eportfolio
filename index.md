@@ -475,7 +475,7 @@ I kept everything centered around one project, building it up layer by layer: fi
     <details class="ocp-item">
       <summary>CS-360 — Mobile Architecture &amp; Programming</summary>
       <div class="ocp-body">
-        <p><strong>Project:</strong> Android grocery-list app (Java + SQLite), with lifecycle, intents, and JSON parsing.</p>
+        <p><strong>Project:</strong> I used Android Studio's GUI to build a (mostly) complete event tracking app I named PunctuOwlity. I created the entire UI, app code, and database (Java + SQLite). Additionally, I had to create a marketing and monetization plan for the app. It currently is not in GitHub, but I will link the project here once I get it uploaded!</p>
         <ul class="ocp-skilllist">
           <li class="chip">Android Lifecycle</li>
           <li class="chip">UI Design</li>
