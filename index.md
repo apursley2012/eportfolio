@@ -42,9 +42,9 @@ Hello! My name is Alysha Pursley, and I am currently finishing up a degree in Co
 
 I've learned so many things throughout this program, it would be hard to name them all, honestly. Earlier in this Capstone course, I was asked to list the three most important skills I have learned. Now, at the end of this course, these three skills still stand out as most important to me:
 
-**1. Programming in Multiple Languages:** I’ve built projects in Python, Java, C++, and JavaScript, which has made it easier to pick up new tools or frameworks and has given me flexibility for future roles.
-**2. User Interface Design and Programming:** In my mobile architecture and programming course, I gained experience designing and coding interfaces that are actually enjoyable to use, which is essential for web and full-stack development.
-**3. Problem-Solving and Debugging:** Almost every course required me to troubleshoot logic errors, find bugs, and figure out how to make my code work efficiently. This skill comes up constantly in real-world programming
+**1. Programming in Multiple Languages:** I’ve built projects in Python, Java, C++, and JavaScript, which has made it easier to pick up new tools or frameworks and has given me flexibility for future roles.<br>
+**2. User Interface Design and Programming:** In my mobile architecture and programming course, I gained experience designing and coding interfaces that are actually enjoyable to use, which is essential for web and full-stack development.<br>
+**3. Problem-Solving and Debugging:** Almost every course required me to troubleshoot logic errors, find bugs, and figure out how to make my code work efficiently. This skill comes up constantly in real-world programming.<br>
 
 To name just a few other things I have learned throughout my degree program, collaboration, communication, and working with databases, data structures and algorithms are a few that stand out. Below you can find summaries on what I learned about each of these.
 
@@ -559,3 +559,21 @@ I kept everything centered around one project, building it up layer by layer: fi
     });
   </script>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.getElementById("typed-header");
+  const text = el.textContent.trim();
+  el.textContent = "";
+  let i = 0;
+
+  function type() {
+    el.textContent = text.slice(0, i++);
+    if (i <= text.length) {
+      setTimeout(type, 50); // speed (ms per char)
+    }
+  }
+
+  type();
+});
+</script>
