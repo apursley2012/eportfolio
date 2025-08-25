@@ -1,7 +1,5 @@
 ---
-layout: default
-title: Enhancement Two Narrative
-permalink: /enhancement-two-narrative/
+ /enhancement-two-narrative/
 ---
 
 <!-- Simple nav -->
