@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Enhancement Two 
+title: Enhancement Two Narrative
+permalink: /enhancement-two-narrative/
 ---
 
 # Algorithms and Data Structures Enhancement
