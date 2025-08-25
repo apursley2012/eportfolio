@@ -25,19 +25,6 @@ Hello! My name is Alysha Pursley, and I am currently finishing up a degree in Co
 
 Completing my Computer Science program and assembling this ePortfolio has been a rewarding journey that brought together my academic projects, real-world work experience, and evolved problem-solving approach. Building this site challenged me to select and showcase my key strengths clearly, articulate them in plain language, and provide verifiable evidence—all of which reinforced my professional focus.
 
-## What I’ve Learned
-
-I've learned so many things throughout this program, it would be hard to name them all, honestly. Earlier in this Capstone course, I was asked to list the three most important skills I have learned. Now, at the end of this course, these three skills still stand out as most important to me:
-
-### Programming in Multiple Languages
-I’ve built projects in Python, Java, C++, and JavaScript, which has made it easier to pick up new tools or frameworks and has given me flexibility for future roles.<br>
-
-### User Interface Design and Programming
-In my mobile architecture and programming course, I gained experience designing and coding interfaces that are actually enjoyable to use, which is essential for web and full-stack development.<br>
-
-### Problem-Solving and Debugging
-Almost every course required me to troubleshoot logic errors, find bugs, and figure out how to make my code work efficiently. This skill comes up constantly in real-world programming.<br>
-
 <!-- ==============================
      REVIEWS & INSTRUCTOR FEEDBACK
      Cards + 5-star outlines + swipe
@@ -288,6 +275,19 @@ Almost every course required me to troubleshoot logic errors, find bugs, and fig
 </section>
 
 
+## What I’ve Learned
+
+I've learned so many things throughout this program, it would be hard to name them all, honestly. Earlier in this Capstone course, I was asked to list the three most important skills I have learned. Now, at the end of this course, these three skills still stand out as most important to me:
+
+### Programming in Multiple Languages
+I’ve built projects in Python, Java, C++, and JavaScript, which has made it easier to pick up new tools or frameworks and has given me flexibility for future roles.<br>
+
+### User Interface Design and Programming
+In my mobile architecture and programming course, I gained experience designing and coding interfaces that are actually enjoyable to use, which is essential for web and full-stack development.<br>
+
+### Problem-Solving and Debugging
+Almost every course required me to troubleshoot logic errors, find bugs, and figure out how to make my code work efficiently. This skill comes up constantly in real-world programming.<br>
+
 To name just a few other things I have learned throughout my degree program, collaboration, communication, and working with databases, data structures and algorithms are a few that stand out. Below you can find summaries on what I learned about each of these.
 
 ### Collaboration 
@@ -299,185 +299,12 @@ I got comfortable switching between technical detail and plain English—README 
 ### Data Structures and Algorithms 
 Across courses, I practiced choosing simple, predictable structures—lists, maps/dicts, queues—then measuring when sorting or searching variants actually help. I also learned to weigh clarity vs. performance and to use language-idiomatic tools (e.g., Python’s defaultdict, safe lookups) to keep behavior predictable. 
 
-## Artifacts & Enhancements
-
-In this ePortfolio, you’ll find three enhancements I made to code I had already written in previous courses. When I started planning these updates, I wanted to make sure I was focusing on skills that hiring managers actually care about, while also hitting all of the required course outcomes. To keep the workload realistic for this term, I chose to stick with a single project—the Corner Grocer App—and build on it across all three categories: Software Design & Engineering, Algorithms & Data Structures, and Databases.
-
-### Artifact 1 — Software Design & Engineering (C++ to Python)
-
-I rewrote the original Corner Grocer console app from C++ into Python, keeping the behavior consistent but making the structure much cleaner. The rewrite makes the code easier to maintain and extend. It’s now broken into clear modules, includes full docstrings, and has a much friendlier command-line interface.
-
-#### Skills 
-Language translation (C++ → Python), modular organization, separation of concerns, testable function design, and solid in-code documentation.
-
-#### Outcomes 
-Collaboration (the structure helps others quickly get up to speed), professional communication (clear code and docstrings), and sound software design.
-
-### Artifact 2 — Algorithms & Data Structures (Sorting + Search)
-
-I added options to sort items alphabetically and by frequency, included a flexible search function, and cleaned up user input handling. These additions make the app feel more usable, like a real interface where users can easily filter or look up what they need.
-
-#### Skills 
-Algorithm selection and analysis, utility function creation, defensive programming, and user-focused input validation.
-
-#### Outcomes
-Algorithmic thinking, evaluating tradeoffs (clarity vs. performance), and writing maintainable, practical code.
-
-### Artifact 3 — Databases (SQLite Integration)
-
-I swapped out the in-memory tracking system and implemented a full SQLite database, complete with schema planning and a separate database handler for queries. Real-world apps need persistent data. This change made the app more realistic, reliable, and structured around safer data operations.
-
-#### Skills 
-SQL schema design, parameterized queries, input validation, exception handling, and separating database logic into its own clean layer.
-
-#### Outcomes
-Database design and use, secure coding practices (aligned with OWASP), and application structure geared toward production use.
-
-### How It All Ties Together
-
-I kept everything centered around one project, building it up layer by layer: first with a cleaner foundation (rewriting it in Python), then smarter features (search and sort), and finally real data persistence (SQLite). All three enhancements build on each other to turn a simple console program into something more realistic and production-ready. Together, they show how I’ve grown—not just in what I can build, but in how I think about code structure, usability, and long-term reliability. This is the kind of mindset I will bring to any full-stack or front-end-leaning engineering role.
-
-<section id="skills-demonstrated" class="skills-showcase" aria-labelledby="skills-title">
-  <h2 id="skills-title">Skills Demonstrated</h2>
-
-  <p class="section-intro">
-    Each chip reflects skill I utilized while implementing my enhancements.
-  </p>
-
-  <style>
-    .skills-showcase{
-      --accent:#39ff14;
-      --card-bg: transparent;
-      --chip-bg: rgba(57,255,20,.08);
-      margin: 1.5rem 0 2rem;
-    }
-    .skills-showcase h2{ margin-bottom:1rem; }
-    .skills-showcase .section-intro{ opacity:.9; margin:.5rem 0 1rem; }
-
-    .skills-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:1rem;
-    }
-    .skill-card{
-      border:1px solid var(--accent);
-      border-left-width:6px;
-      border-radius:12px;
-      padding:1rem;
-      background:var(--card-bg);
-    }
-    .skill-card h3{
-      margin:0 0 .5rem;
-      line-height:1.2;
-      font-size:1.05rem;
-      display:flex; align-items:center; gap:.5rem;
-      white-space: wrap;
-    }
-    .skill-card h3 .icon{ font-size:1.2rem; }
-    .skill-card p.sub{ margin:0 0 .75rem; font-size:.9rem; opacity:.85; }
-    .chips{ display:flex; flex-wrap:wrap; gap:.5rem; }
-    .chip{
-      display:inline-block;
-      border:1px solid var(--accent);
-      background:var(--chip-bg);
-      color:var(--accent);
-      padding:.25rem .6rem;
-      border-radius:999px;
-      font-size:.9rem;
-      white-space:nowrap;
-    }
-    @media (max-width:420px){
-      .chips{ gap:.4rem; }
-      .chip{ font-size:.85rem; }
-    }
-  </style>
-
-  <div class="skills-grid">
-    <!-- 1. Programming Proficiency (no tech names) -->
-    <article class="skill-card">
-      <h3><span class="icon">💻</span> Programming Proficiency</h3>
-      <p class="sub">Habits that make code easier to write, read, and change.</p>
-      <div class="chips">
-        <span class="chip">Language Portability Across Stacks</span>
-        <span class="chip">Algorithmic Problem-Solving</span>
-        <span class="chip">Function Abstraction</span>
-        <span class="chip">Readable, Testable Functions</span>
-        <span class="chip">Idiomatic Refactoring</span>
-        <span class="chip">Commit Hygiene & Versioning</span>
-      </div>
-    </article>
-    <!-- 2. Software Design & Architecture -->
-    <article class="skill-card">
-      <h3><span class="icon">🧩</span> Software Design &amp; Architecture</h3>
-      <p class="sub">Structure that keeps features maintainable and team-friendly.</p>
-      <div class="chips">
-        <span class="chip">Modular Architecture</span>
-        <span class="chip">Separation of Concerns</span>
-        <span class="chip">Reusability & Composition</span>
-        <span class="chip">Basic Class Design</span>
-        <span class="chip">Persistent Storage Design</span>
-        <span class="chip">Schema Planning</span>
-        <span class="chip">Backward-Compatible Iteration</span>
-        <span class="chip">Scalability Mindset</span>
-      </div>
-    </article>
-    <!-- 3. Data Handling & Structures -->
-    <article class="skill-card">
-      <h3><span class="icon">🗄️</span> Data Handling &amp; Structures</h3>
-      <p class="sub">Moving, storing, and guarding data responsibly.</p>
-      <div class="chips">
-        <span class="chip">File I/O Patterns</span>
-        <span class="chip">Relational Query Construction</span>
-        <span class="chip">Database Integration</span>
-        <span class="chip">Safe Data Access</span>
-        <span class="chip">Map/Dictionary Utilities</span>
-        <span class="chip">String Normalization</span>
-        <span class="chip">Input Validation</span>
-        <span class="chip">Robust Error Handling</span>
-      </div>
-    </article>
-    <!-- 4. Data Processing & Output -->
-    <article class="skill-card">
-      <h3><span class="icon">📊</span> Data Processing &amp; Output</h3>
-      <p class="sub">Turning raw values into results people can use.</p>
-      <div class="chips">
-        <span class="chip">Sorting (Alpha / Frequency)</span>
-        <span class="chip">Search & Filtering</span>
-        <span class="chip">Usable Data Displays</span>
-        <span class="chip">Histogram & Summary Output</span>
-      </div>
-    </article>
-    <!-- 5. Interface Design & Usability -->
-    <article class="skill-card">
-      <h3><span class="icon">🧭</span> Interface Design &amp; Usability</h3>
-      <p class="sub">Flows that are predictable and easy to navigate.</p>
-      <div class="chips">
-        <span class="chip">Menu Architecture</span>
-        <span class="chip">Guided Prompts</span>
-        <span class="chip">Progressive Disclosure</span>
-        <span class="chip">UX-Focused Iteration</span>
-      </div>
-    </article>
-    <!-- 6. Documentation & Readability -->
-    <article class="skill-card">
-      <h3><span class="icon">📝</span> Documentation &amp; Readability</h3>
-      <p class="sub">Code that explains itself and is easy to hand off.</p>
-      <div class="chips">
-        <span class="chip">Concise Docstrings & Headers</span>
-        <span class="chip">Self-Documenting Code</span>
-        <span class="chip">Clear Change Notes</span>
-      </div>
-    </article>
-  </div>
-</section>
-
-
 <!-- =========================================================
 =  SECTION 2 — LANGUAGES & TECH I’M FAMILIAR WITH (chips)    =
 =  (all tech names live here; no overlap with skills above)  =
 ========================================================= -->
 <section id="tech-familiar" class="tech-simple" aria-labelledby="tech-title">
-  <h2 id="tech-title">Languages &amp; Tech I’m Familiar With</h2>
+  <h2 id="tech-title">Languages &amp; Tech I’m Familiar With (All that I can think of, atleast!) </h2>
 
   <p class="section-intro">
   Grouped for quick scanning.
@@ -627,6 +454,180 @@ I kept everything centered around one project, building it up layer by layer: fi
     </div>
   </div>
 </section>
+
+## Artifacts & Enhancements
+
+In this ePortfolio, you’ll find three enhancements I made to code I had already written in previous courses. When I started planning these updates, I wanted to make sure I was focusing on skills that hiring managers actually care about, while also hitting all of the required course outcomes. To keep the workload realistic for this term, I chose to stick with a single project—the Corner Grocer App—and build on it across all three categories: Software Design & Engineering, Algorithms & Data Structures, and Databases.
+
+### Artifact 1 — Software Design & Engineering (C++ to Python)
+
+I rewrote the original Corner Grocer console app from C++ into Python, keeping the behavior consistent but making the structure much cleaner. The rewrite makes the code easier to maintain and extend. It’s now broken into clear modules, includes full docstrings, and has a much friendlier command-line interface.
+
+#### Skills 
+Language translation (C++ → Python), modular organization, separation of concerns, testable function design, and solid in-code documentation.
+
+#### Outcomes 
+Collaboration (the structure helps others quickly get up to speed), professional communication (clear code and docstrings), and sound software design.
+
+### Artifact 2 — Algorithms & Data Structures (Sorting + Search)
+
+I added options to sort items alphabetically and by frequency, included a flexible search function, and cleaned up user input handling. These additions make the app feel more usable, like a real interface where users can easily filter or look up what they need.
+
+#### Skills 
+Algorithm selection and analysis, utility function creation, defensive programming, and user-focused input validation.
+
+#### Outcomes
+Algorithmic thinking, evaluating tradeoffs (clarity vs. performance), and writing maintainable, practical code.
+
+### Artifact 3 — Databases (SQLite Integration)
+
+I swapped out the in-memory tracking system and implemented a full SQLite database, complete with schema planning and a separate database handler for queries. Real-world apps need persistent data. This change made the app more realistic, reliable, and structured around safer data operations.
+
+#### Skills 
+SQL schema design, parameterized queries, input validation, exception handling, and separating database logic into its own clean layer.
+
+#### Outcomes
+Database design and use, secure coding practices (aligned with OWASP), and application structure geared toward production use.
+
+### How It All Ties Together
+
+I kept everything centered around one project, building it up layer by layer: first with a cleaner foundation (rewriting it in Python), then smarter features (search and sort), and finally real data persistence (SQLite). All three enhancements build on each other to turn a simple console program into something more realistic and production-ready. Together, they show how I’ve grown—not just in what I can build, but in how I think about code structure, usability, and long-term reliability. This is the kind of mindset I will bring to any full-stack or front-end-leaning engineering role.
+
+
+<section id="skills-demonstrated" class="skills-showcase" aria-labelledby="skills-title">
+  <h2 id="skills-title">Skills Demonstrated</h2>
+
+  <p class="section-intro">
+    Each chip reflects skill I utilized while implementing my enhancements.
+  </p>
+
+  <style>
+    .skills-showcase{
+      --accent:#39ff14;
+      --card-bg: transparent;
+      --chip-bg: rgba(57,255,20,.08);
+      margin: 1.5rem 0 2rem;
+    }
+    .skills-showcase h2{ margin-bottom:1rem; }
+    .skills-showcase .section-intro{ opacity:.9; margin:.5rem 0 1rem; }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:1rem;
+    }
+    .skill-card{
+      border:1px solid var(--accent);
+      border-left-width:6px;
+      border-radius:12px;
+      padding:1rem;
+      background:var(--card-bg);
+    }
+    .skill-card h3{
+      margin:0 0 .5rem;
+      line-height:1.2;
+      font-size:1.05rem;
+      display:flex; align-items:center; gap:.5rem;
+      white-space: wrap;
+    }
+    .skill-card h3 .icon{ font-size:1.2rem; }
+    .skill-card p.sub{ margin:0 0 .75rem; font-size:.9rem; opacity:.85; }
+    .chips{ display:flex; flex-wrap:wrap; gap:.5rem; }
+    .chip{
+      display:inline-block;
+      border:1px solid var(--accent);
+      background:var(--chip-bg);
+      color:var(--accent);
+      padding:.25rem .6rem;
+      border-radius:999px;
+      font-size:.9rem;
+      white-space:nowrap;
+    }
+    @media (max-width:420px){
+      .chips{ gap:.4rem; }
+      .chip{ font-size:.85rem; }
+    }
+  </style>
+
+  <div class="skills-grid">
+    <!-- 1. Programming Proficiency (no tech names) -->
+    <article class="skill-card">
+      <h3><span class="icon">💻</span> Programming Proficiency</h3>
+      <p class="sub">Habits that make code easier to write, read, and change.</p>
+      <div class="chips">
+        <span class="chip">Language Portability Across Stacks</span>
+        <span class="chip">Algorithmic Problem-Solving</span>
+        <span class="chip">Function Abstraction</span>
+        <span class="chip">Readable, Testable Functions</span>
+        <span class="chip">Idiomatic Refactoring</span>
+        <span class="chip">Commit Hygiene & Versioning</span>
+      </div>
+    </article>
+    <!-- 2. Software Design & Architecture -->
+    <article class="skill-card">
+      <h3><span class="icon">🧩</span> Software Design &amp; Architecture</h3>
+      <p class="sub">Structure that keeps features maintainable and team-friendly.</p>
+      <div class="chips">
+        <span class="chip">Modular Architecture</span>
+        <span class="chip">Separation of Concerns</span>
+        <span class="chip">Reusability & Composition</span>
+        <span class="chip">Basic Class Design</span>
+        <span class="chip">Persistent Storage Design</span>
+        <span class="chip">Schema Planning</span>
+        <span class="chip">Backward-Compatible Iteration</span>
+        <span class="chip">Scalability Mindset</span>
+      </div>
+    </article>
+    <!-- 3. Data Handling & Structures -->
+    <article class="skill-card">
+      <h3><span class="icon">🗄️</span> Data Handling &amp; Structures</h3>
+      <p class="sub">Moving, storing, and guarding data responsibly.</p>
+      <div class="chips">
+        <span class="chip">File I/O Patterns</span>
+        <span class="chip">Relational Query Construction</span>
+        <span class="chip">Database Integration</span>
+        <span class="chip">Safe Data Access</span>
+        <span class="chip">Map/Dictionary Utilities</span>
+        <span class="chip">String Normalization</span>
+        <span class="chip">Input Validation</span>
+        <span class="chip">Robust Error Handling</span>
+      </div>
+    </article>
+    <!-- 4. Data Processing & Output -->
+    <article class="skill-card">
+      <h3><span class="icon">📊</span> Data Processing &amp; Output</h3>
+      <p class="sub">Turning raw values into results people can use.</p>
+      <div class="chips">
+        <span class="chip">Sorting (Alpha / Frequency)</span>
+        <span class="chip">Search & Filtering</span>
+        <span class="chip">Usable Data Displays</span>
+        <span class="chip">Histogram & Summary Output</span>
+      </div>
+    </article>
+    <!-- 5. Interface Design & Usability -->
+    <article class="skill-card">
+      <h3><span class="icon">🧭</span> Interface Design &amp; Usability</h3>
+      <p class="sub">Flows that are predictable and easy to navigate.</p>
+      <div class="chips">
+        <span class="chip">Menu Architecture</span>
+        <span class="chip">Guided Prompts</span>
+        <span class="chip">Progressive Disclosure</span>
+        <span class="chip">UX-Focused Iteration</span>
+      </div>
+    </article>
+    <!-- 6. Documentation & Readability -->
+    <article class="skill-card">
+      <h3><span class="icon">📝</span> Documentation &amp; Readability</h3>
+      <p class="sub">Code that explains itself and is easy to hand off.</p>
+      <div class="chips">
+        <span class="chip">Concise Docstrings & Headers</span>
+        <span class="chip">Self-Documenting Code</span>
+        <span class="chip">Clear Change Notes</span>
+      </div>
+    </article>
+  </div>
+</section>
+
 
 <!-- =========================================================
 =  SECTION 3 — OTHER COURSEWORK PROJECTS (accordions)        =
