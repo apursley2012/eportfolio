@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Enhancement One
+title: Enhancement One Narrative 
+permalink: /enhancement-one-narrative/
 ---
 
 <!-- Enhancement 1 Narrative — Software Design & Engineering -->
