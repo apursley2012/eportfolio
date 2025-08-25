@@ -54,35 +54,37 @@ I got comfortable switching between technical detail and plain English—README 
 ### Data Structures and Algorithms 
 Across courses, I practiced choosing simple, predictable structures—lists, maps/dicts, queues—then measuring when sorting or searching variants actually help. I also learned to weigh clarity vs. performance and to use language-idiomatic tools (e.g., Python’s defaultdict, safe lookups) to keep behavior predictable. 
 
-## This Portfolio
+## Artifacts & Enhancements
 
-In this ePortfolio, you will find three enhancements I made to previously written code. When I planned my enhancements for this portfolio, I wanted to make sure I was focusing on skills that employers actually care about while also covering every course outcome. To keep everything manageable this term, I decided to use the same Corner Grocer App project for all three enhancement categories: Software Design & Engineering, Algorithms & Data Structures, and Databases.
+In this ePortfolio, you’ll find three enhancements I made to code I had already written in previous courses. When I started planning these updates, I wanted to make sure I was focusing on skills that hiring managers actually care about, while also hitting all of the required course outcomes. To keep the workload realistic for this term, I chose to stick with a single project—the Corner Grocer App—and build on it across all three categories: Software Design & Engineering, Algorithms & Data Structures, and Databases.
 
-Artifact 1 — Software Design & Engineering (C++ → Python)
+## Artifact 1 — Software Design & Engineering (C++ to Python)
 
-What I did: Rewrote the Corner Grocer console app from C++ to Python while preserving behavior.
-Why it matters: The rewrite makes the codebase cleaner and easier to extend—clear modules, docstrings, and a friendlier CLI.
-Skills shown: Language portability, modular design, separation of concerns, readable/testable functions, clear documentation.
-Outcomes touched: Collaboration readiness (others can follow and contribute), professional communication (docstrings/structure), software design.
+I rewrote the original Corner Grocer console app from C++ into Python, keeping the behavior consistent but making the structure much cleaner. The rewrite makes the code easier to maintain and extend. It’s now broken into clear modules, includes full docstrings, and has a much friendlier command-line interface.
 
-Artifact 2 — Algorithms & Data Structures (Sorting + Search)
+**Skills shown:** Language translation (C++ → Python), modular organization, separation of concerns, testable function design, and solid in-code documentation.
 
-What I did: Added alphabetical and frequency sort options, a partial-match search, and input normalization.
-Why it matters: These are practical DS&A patterns that make the app more useful (think “filter and find” in a real UI).
-Skills shown: Complexity-aware choices, helper utilities, defensive input handling, error-resistant flows.
-Outcomes touched: Algorithmic design and evaluation, trade-off reasoning (clarity vs. performance), maintainability.
+**Outcomes covered:** Collaboration (the structure helps others quickly get up to speed), professional communication (clear code and docstrings), and sound software design.
 
-Artifact 3 — Databases (SQLite Persistence)
+## Artifact 2 — Algorithms & Data Structures (Sorting + Search)
 
-What I did: Replaced in-memory storage with a lightweight SQLite schema and a dedicated db_handler for CRUD.
-Why it matters: Real applications persist data; this adds reliability, realistic workflows, and safer data paths.
-Skills shown: Schema planning, parameterized queries, input validation, exception handling, clean data access boundaries.
-Outcomes touched: Database design and integration, secure coding habits (OWASP-aligned), production-oriented structure.
+I added options to sort items alphabetically and by frequency, included a flexible search function, and cleaned up user input handling. These additions make the app feel more usable, like a real interface where users can easily filter or look up what they need.
 
-How these artifacts fit together
+**Skills shown:** Algorithm selection and analysis, utility function creation, defensive programming, and user-focused input validation.
 
-I kept one project and iterated across layers: first clean architecture (rewrite), then useful algorithms (sort/search), then real persistence (SQLite). Together, they turn a simple console tool into something much closer to a production feature: modular code that’s easy to navigate, practical DS&A applied to user needs, and a secure path for data. This throughline shows my growth from “make it work” to “make it clean, usable, and durable”—the mindset I’ll bring to a front-end-leaning full-stack role.
+**Outcomes covered:** Algorithmic thinking, evaluating tradeoffs (clarity vs. performance), and writing maintainable, practical code.
 
+## Artifact 3 — Databases (SQLite Integration)
+
+I swapped out the in-memory tracking system and implemented a full SQLite database, complete with schema planning and a separate database handler for queries. Real-world apps need persistent data. This change made the app more realistic, reliable, and structured around safer data operations.
+
+**Skills shown:** SQL schema design, parameterized queries, input validation, exception handling, and separating database logic into its own clean layer.
+
+**Outcomes covered:** Database design and use, secure coding practices (aligned with OWASP), and application structure geared toward production use.
+
+### How It All Ties Together
+
+I kept everything centered around one project, building it up layer by layer: first with a cleaner foundation (rewriting it in Python), then smarter features (search and sort), and finally real data persistence (SQLite). All three enhancements build on each other to turn a simple console program into something more realistic and production-ready. Together, they show how I’ve grown—not just in what I can build, but in how I think about code structure, usability, and long-term reliability. This is the kind of mindset I bring to any full-stack or front-end-leaning engineering role.
 
 <section id="skills-demonstrated" class="skills-showcase" aria-labelledby="skills-title">
   <h2 id="skills-title">Skills Demonstrated</h2>
