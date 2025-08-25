@@ -570,7 +570,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function type() {
     el.textContent = text.slice(0, i++);
     if (i <= text.length) {
-      setTimeout(type, 50); // speed (ms per char)
+      setTimeout(type, 150); // speed (ms per char)
     }
   }
 
