@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Enhancement Two Narrative 
-permalink: /enhancement-two-narrative/
+permalink: /enhancement-two-narrative
 ---
 <!-- Simple nav -->
 <nav style="margin-bottom: 20px;">
