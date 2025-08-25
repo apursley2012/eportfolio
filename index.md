@@ -6,9 +6,12 @@ title: Home
 <!-- Simple nav -->
 <nav style="margin-bottom: 20px;">
   <a href="./index.html">Home</a> |
-  <a href="./enhancement-one.md">Enhancement 1</a> |
-  <a href="./enhancement-two.md">Enhancement 2</a> |
-  <a href="./enhancement-three.md">Enhancement 3</a> |
+  <a href="enhancement-one/narrative-one.md">Enhancement 1 Narrative</a> |
+  <a href="enhancement-two/narrative-two.md">Enhancement 2 Narrative</a> |
+  <a href="enhancement-three/narrative-three.md">Enhancement 3 Narrative</a> |
+   <a href="enhancement-one">Enhancement 1 Project Code</a> |
+  <a href="enhancement-two">Enhancement 2 Project Code</a> |
+  <a href="enhancement-three">Enhancement 3 Project Code</a> |
    <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
   </nav>
 <link rel="preconnect" href="https://fonts.googleapis.com">
