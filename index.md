@@ -63,9 +63,7 @@ In this ePortfolio, you will find three enhancements I made to previously writte
   <h2 id="skills-title">Skills Demonstrated</h2>
 
   <p class="section-intro">
-    This is how I work: clean structure, readable code, and small, testable pieces.
-    I lean front-end in a full-stack context—modular design, safe data handling, approachable UX, and secure habits.
-    Each chip reflects something I actually implemented during my enhancements.
+    Each chip reflects skill I utilized while implementing my enhancements.
   </p>
 
   <style>
@@ -203,8 +201,7 @@ In this ePortfolio, you will find three enhancements I made to previously writte
   <h2 id="tech-title">Languages &amp; Tech I’m Familiar With</h2>
 
   <p class="section-intro">
-    Broader toolset I use across coursework and projects—languages, web frameworks, databases, testing,
-    security, and dev tools (Git/GitHub, VS Code, Replit, Postman). Grouped for quick scanning.
+  Grouped for quick scanning.
   </p>
 
   <style>
@@ -358,7 +355,7 @@ In this ePortfolio, you will find three enhancements I made to previously writte
   <h2 id="ocp-title">Other Coursework Projects (Not in ePortfolio Artifacts)</h2>
 
   <p class="section-intro">
-    These aren’t the capstone artifacts—these are other course projects that shaped my skill set:
+    These are other course projects that shaped my skill set:
     testing a Python file-handler with unit tests, a REST API with Node/Express + MongoDB, an Android app with SQLite,
     OS concurrency work in C++, SDLC/UML planning, and a security risk analysis aligned to OWASP.
   </p>
