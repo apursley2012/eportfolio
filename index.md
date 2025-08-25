@@ -632,7 +632,7 @@ I kept everything centered around one project, building it up layer by layer: fi
 =  SECTION 3 — OTHER COURSEWORK PROJECTS (accordions)        =
 ========================================================= -->
 <section id="coursework-projects" class="ocp-accordion" aria-labelledby="ocp-title">
-  <h2 id="ocp-title">Other Coursework Projects (Not in ePortfolio Artifacts)</h2>
+  <h2 id="ocp-title">Additional Projects</h2>
 
   <p class="section-intro">
     These are other course projects that shaped my skill set:
