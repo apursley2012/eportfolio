@@ -56,7 +56,32 @@ Across courses, I practiced choosing simple, predictable structures—lists, map
 
 ## This Portfolio
 
-In this ePortfolio, you will find three enhancements I made to previously written code. When I planned my enhancements for this portfolio, I wanted to make sure I was focusing on skills that employers actually care about while also covering every course outcome. To keep everything manageable this term, I decided to use the same Corner Grocer App project for all three enhancement categories.
+In this ePortfolio, you will find three enhancements I made to previously written code. When I planned my enhancements for this portfolio, I wanted to make sure I was focusing on skills that employers actually care about while also covering every course outcome. To keep everything manageable this term, I decided to use the same Corner Grocer App project for all three enhancement categories: Software Design & Engineering, Algorithms & Data Structures, and Databases.
+
+Artifact 1 — Software Design & Engineering (C++ → Python)
+
+What I did: Rewrote the Corner Grocer console app from C++ to Python while preserving behavior.
+Why it matters: The rewrite makes the codebase cleaner and easier to extend—clear modules, docstrings, and a friendlier CLI.
+Skills shown: Language portability, modular design, separation of concerns, readable/testable functions, clear documentation.
+Outcomes touched: Collaboration readiness (others can follow and contribute), professional communication (docstrings/structure), software design.
+
+Artifact 2 — Algorithms & Data Structures (Sorting + Search)
+
+What I did: Added alphabetical and frequency sort options, a partial-match search, and input normalization.
+Why it matters: These are practical DS&A patterns that make the app more useful (think “filter and find” in a real UI).
+Skills shown: Complexity-aware choices, helper utilities, defensive input handling, error-resistant flows.
+Outcomes touched: Algorithmic design and evaluation, trade-off reasoning (clarity vs. performance), maintainability.
+
+Artifact 3 — Databases (SQLite Persistence)
+
+What I did: Replaced in-memory storage with a lightweight SQLite schema and a dedicated db_handler for CRUD.
+Why it matters: Real applications persist data; this adds reliability, realistic workflows, and safer data paths.
+Skills shown: Schema planning, parameterized queries, input validation, exception handling, clean data access boundaries.
+Outcomes touched: Database design and integration, secure coding habits (OWASP-aligned), production-oriented structure.
+
+How these artifacts fit together
+
+I kept one project and iterated across layers: first clean architecture (rewrite), then useful algorithms (sort/search), then real persistence (SQLite). Together, they turn a simple console tool into something much closer to a production feature: modular code that’s easy to navigate, practical DS&A applied to user needs, and a secure path for data. This throughline shows my growth from “make it work” to “make it clean, usable, and durable”—the mindset I’ll bring to a front-end-leaning full-stack role.
 
 
 <section id="skills-demonstrated" class="skills-showcase" aria-labelledby="skills-title">
