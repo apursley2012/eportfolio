@@ -5,8 +5,7 @@ permalink: /enhancement-two-narrative
 ---
 <!-- Simple nav -->
 <nav style="margin-bottom: 20px;">
-  <a href="https://apursley2012.github.io/eportfolio/">Home</a> |
-   <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
+  <a href="https://apursley2012.github.io/eportfolio/">Home</a> 
   </nav>
 
 # Algorithms and Data Structures Enhancement
