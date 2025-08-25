@@ -526,7 +526,7 @@ I kept everything centered around one project, building it up layer by layer: fi
     <details class="ocp-item">
       <summary>CS-230 — Operating Platforms Systems</summary>
       <div class="ocp-body">
-        <p><strong>Project:</strong> In <a href="https://github.com/apursley2012/CS230_Operating_Platforms_Portfolio">this</a> course repo, you can find my reflection of the "Draw It or Lose It" project in my CS230: Operating Platforms course. This project showcases my ability to design a software application and communicate design ideas effectively.</p>
+        <p><strong>Project:</strong> “Draw It or Lose It” application design project, demonstrating software architecture decisions, platform considerations, and effective communication of design ideas.You can view the course repo and projects <a href="https://github.com/apursley2012/CS230_Operating_Platforms_Portfolio">here</a>.</p>
         <ul class="ocp-skilllist">
           <li class="chip">Threading</li>
           <li class="chip">Concurrency</li>
