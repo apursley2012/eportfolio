@@ -158,14 +158,14 @@ Completing my Computer Science program and assembling this ePortfolio has been a
       {
         course: "CS370: Current/Emerging Trends in Computer Science",
         reviewer: "Dr. Hawk",
-        grade: "A",
+        grade: "B",
         quote: "You provided a concise explanation of how neural networks operate, effectively outlining the roles of the input, hidden, and output layers. This was particularly strong in simplifying complex concepts, making them accessible to a non-technical audience. Your identification of legal concerns was on point and relevant.",
         tags: ["Clarity", "AI", "Neural Networks", "Accessible Language"]
       },
       {
         course: "CS465: Full Stack Development I",
         reviewer: "Instructor Benyam Heyi",
-        grade: "B",
+        grade: "C",
         quote: "Great work on outlining all the requirements of the rubric—your structure and coverage are well thought out. For future submissions, please make sure to also complete the API endpoints table. Including this information will significantly enhance the quality of your Software Design Document (SDD).",
         tags: ["API", "SDD", "Technical Completeness", "Communication"]
       },
