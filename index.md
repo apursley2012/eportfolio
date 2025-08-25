@@ -6,7 +6,7 @@ title: Home
 <!-- Simple nav -->
 <nav style="margin-bottom: 20px;">
   <a href="./index.html">Home</a> |
-  <a href="https://github.com/apursley2012/eportfolio/blob/main/enhancement-one/narrative-one.md">Enhancement 1 Narrative</a> |
+  <a href="https://github.com/apursley2012/eportfolio/blob/main/enhancement-narrative-one.md">Enhancement 1 Narrative</a> |
   <a href="https://github.com/apursley2012/eportfolio/blob/main/enhancement-two/narrative-two.md">Enhancement 2 Narrative</a> |
   <a href="https://github.com/apursley2012/eportfolio/blob/main/enhancement-three/narrative-three.md">Enhancement 3 Narrative</a> |
    <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-one">Enhancement 1 Project Code</a> |
