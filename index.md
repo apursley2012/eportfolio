@@ -87,8 +87,6 @@ Database design and use, secure coding practices (aligned with OWASP), and appli
 
 I kept everything centered around one project, building it up layer by layer: first with a cleaner foundation (rewriting it in Python), then smarter features (search and sort), and finally real data persistence (SQLite). All three enhancements build on each other to turn a simple console program into something more realistic and production-ready. Together, they show how I’ve grown—not just in what I can build, but in how I think about code structure, usability, and long-term reliability. This is the kind of mindset I will bring to any full-stack or front-end-leaning engineering role.
 
-Beyond my academic skillset, some additional skills I have acquired over the years I have included below:
-
 <section id="skills-demonstrated" class="skills-showcase" aria-labelledby="skills-title">
   <h2 id="skills-title">Skills Demonstrated</h2>
 
