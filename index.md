@@ -5,7 +5,7 @@ title: Home
 
 <!-- Simple nav -->
 <nav style="margin-bottom: 20px;">
-  <a href="./index/">Home</a> |
+  <a href="./index.md/">Home</a> |
   <a href="./enhancement-one-narrative/">Enhancement 1 Narrative</a> |
   <a href="./enhancement-two-narrative/">Enhancement 2 Narrative</a> |
   <a href="./enhancement-three-narrative/">Enhancement 3 Narrative</a> |
