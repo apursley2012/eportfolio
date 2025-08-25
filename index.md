@@ -67,6 +67,147 @@ The sorting and searching enhancement forced me to choose the right structures a
 
 Moving from in-memory data to SQLite created a proper boundary for persistence and opened the door for reliability improvements. I designed a simple schema, wrote parameterized queries to protect against injection, and added basic error handling to keep operations safe. The small data layer (db_handler style organization) keeps SQL concerns in one place, which reduces duplication and mistakes. I validated assumptions around file paths, empty databases, and initial seed data to keep the app predictable on first launch. The application now remembers state across runs and behaves like software a user could trust day-to-day.
 
+
+<!-- Skills Showcase (paste into your Markdown page) -->
+<section class="skills-showcase" aria-labelledby="skills-title">
+  <h2 id="skills-title">Skills Demonstrated</h2>
+
+  <style>
+    /* Scoped styles for the Hacker theme */
+    .skills-showcase { --accent:#39ff14; --card-bg: transparent; --chip-bg: rgba(57,255,20,0.08); }
+    .skills-showcase { margin: 1.5rem 0 2rem; }
+    .skills-showcase h2 { margin-bottom: 1rem; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .skill-card {
+      border: 1px solid var(--accent);
+      border-left-width: 6px;
+      border-radius: 12px;
+      padding: 1rem;
+      background: var(--card-bg);
+    }
+    .skill-card h3 {
+      margin: 0 0 .5rem;
+      line-height: 1.2;
+      font-size: 1.05rem;
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .skill-card h3 .icon { font-size: 1.2rem; }
+    .skill-card p.sub {
+      margin: 0 0 .75rem; font-size: .9rem; opacity: .85;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .chip {
+      display: inline-block;
+      border: 1px solid var(--accent);
+      background: var(--chip-bg);
+      padding: .25rem .6rem;
+      border-radius: 999px;
+      font-size: .9rem;
+      white-space: nowrap;
+    }
+    /* Optional: collapsible details look */
+    .skill-card details { margin-top: .25rem; }
+    .skill-card summary {
+      cursor: pointer; user-select: none; outline: none;
+      font-size: .9rem; opacity: .9; margin-bottom: .5rem;
+    }
+    .skill-card summary::-webkit-details-marker { display: none; }
+    .skill-card summary:before { content: "▸ "; }
+    .skill-card details[open] summary:before { content: "▾ "; }
+    /* Tweak for narrow screens */
+    @media (max-width: 420px){
+      .chips { gap: .4rem; }
+      .chip { font-size: .85rem; }
+    }
+  </style>
+
+  <div class="skills-grid">
+    <!-- 1. Programming Proficiency -->
+    <article class="skill-card">
+      <h3><span class="icon">💻</span> Programming Proficiency</h3>
+      <p class="sub">Core languages and habits that make code easier to write, read, and change.</p>
+      <div class="chips">
+        <span class="chip">Language Portability: C++ → Python</span>
+        <span class="chip">Programming Proficiency</span>
+        <span class="chip">Python</span>
+        <span class="chip">C++</span>
+        <span class="chip">Problem-Solving</span>
+        <span class="chip">Function Abstraction</span>
+      </div>
+    </article>
+    
+  <article class="skill-card">
+      <h3><span class="icon">🧩</span> Software Design & Architecture</h3>
+      <p class="sub">Structure that keeps features maintainable and team-friendly.</p>
+      <div class="chips">
+        <span class="chip">Software Design Principles</span>
+        <span class="chip">Modular Architecture & Design</span>
+        <span class="chip">Separation of Concerns</span>
+        <span class="chip">Code Reusability</span>
+        <span class="chip">Basic Class Design</span>
+        <span class="chip">Persistent Storage Design</span>
+        <span class="chip">Basic Database Schema Design</span>
+        <span class="chip">Expanded System Scalability</span>
+        <span class="chip">Preserved Backward Compatibility</span>
+      </div>
+    </article>
+    <!-- 3. Data Handling & Structures -->
+    <article class="skill-card">
+      <h3><span class="icon">🗄️</span> Data Handling & Structures</h3>
+      <p class="sub">Moving, storing, and guarding data responsibly.</p>
+      <div class="chips">
+        <span class="chip">File I/O Handling</span>
+        <span class="chip">Database Integration</span>
+        <span class="chip">SQL Query Construction</span>
+        <span class="chip">Safe Data Access Patterns</span>
+        <span class="chip">Safe Dictionary Access</span>
+        <span class="chip">Use of <code>defaultdict</code></span>
+        <span class="chip">String Normalization</span>
+        <span class="chip">Input Validation Implementation</span>
+        <span class="chip">Input Handling Enhancements</span>
+        <span class="chip">Error Handling in Data Operations</span>
+      </div>
+    </article>
+    <!-- 4. Data Processing & Output -->
+    <article class="skill-card">
+      <h3><span class="icon">📊</span> Data Processing & Output</h3>
+      <p class="sub">Turning raw values into results people can use.</p>
+      <div class="chips">
+        <span class="chip">Data Sorting</span>
+        <span class="chip">Alphabetical Sorting Logic</span>
+        <span class="chip">Frequency-Based Sorting</span>
+        <span class="chip">Data Retrieval and Display</span>
+        <span class="chip">Histogram Output</span>
+        <span class="chip">Search Functionality</span>
+      </div>
+    </article>
+    <!-- 5. Interface Design & Usability -->
+    <article class="skill-card">
+      <h3><span class="icon">🧭</span> Interface Design & Usability</h3>
+      <p class="sub">Flows that are predictable and easy to navigate.</p>
+      <div class="chips">
+        <span class="chip">Menu Design</span>
+        <span class="chip">Menu-Driven Interface</span>
+        <span class="chip">Menu-Driven Interface Expansion</span>
+        <span class="chip">Expanded Menu System</span>
+        <span class="chip">User Experience Improvements</span>
+      </div>
+    </article>
+    <!-- 6. Documentation & Readability -->
+    <article class="skill-card">
+      <h3><span class="icon">📝</span> Documentation & Readability</h3>
+      <p class="sub">Code that explains itself and is easy to hand off.</p>
+      <div class="chips">
+        <span class="chip">Code Documentation</span>
+        <span class="chip">Commenting and Readability</span>
+      </div>
+    </article>
+  </div>
+
 <!-- Skills Showcase (paste into your Markdown page) -->
 <section class="skills-showcase" aria-labelledby="skills-title">
   <h2 id="skills-title">Skills Demonstrated</h2>
