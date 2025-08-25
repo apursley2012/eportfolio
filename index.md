@@ -53,29 +53,35 @@ Across courses, I practiced choosing simple, predictable structures—lists, map
 
 In this ePortfolio, you’ll find three enhancements I made to code I had already written in previous courses. When I started planning these updates, I wanted to make sure I was focusing on skills that hiring managers actually care about, while also hitting all of the required course outcomes. To keep the workload realistic for this term, I chose to stick with a single project—the Corner Grocer App—and build on it across all three categories: Software Design & Engineering, Algorithms & Data Structures, and Databases.
 
-## Artifact 1 — Software Design & Engineering (C++ to Python)
+### Artifact 1 — Software Design & Engineering (C++ to Python)
 
 I rewrote the original Corner Grocer console app from C++ into Python, keeping the behavior consistent but making the structure much cleaner. The rewrite makes the code easier to maintain and extend. It’s now broken into clear modules, includes full docstrings, and has a much friendlier command-line interface.
 
-**Skills shown:** Language translation (C++ → Python), modular organization, separation of concerns, testable function design, and solid in-code documentation.
+#### Skills 
+Language translation (C++ → Python), modular organization, separation of concerns, testable function design, and solid in-code documentation.
 
-**Outcomes covered:** Collaboration (the structure helps others quickly get up to speed), professional communication (clear code and docstrings), and sound software design.
+#### Outcomes 
+Collaboration (the structure helps others quickly get up to speed), professional communication (clear code and docstrings), and sound software design.
 
-## Artifact 2 — Algorithms & Data Structures (Sorting + Search)
+### Artifact 2 — Algorithms & Data Structures (Sorting + Search)
 
 I added options to sort items alphabetically and by frequency, included a flexible search function, and cleaned up user input handling. These additions make the app feel more usable, like a real interface where users can easily filter or look up what they need.
 
-**Skills shown:** Algorithm selection and analysis, utility function creation, defensive programming, and user-focused input validation.
+#### Skills 
+Algorithm selection and analysis, utility function creation, defensive programming, and user-focused input validation.
 
-**Outcomes covered:** Algorithmic thinking, evaluating tradeoffs (clarity vs. performance), and writing maintainable, practical code.
+#### Outcomes
+Algorithmic thinking, evaluating tradeoffs (clarity vs. performance), and writing maintainable, practical code.
 
-## Artifact 3 — Databases (SQLite Integration)
+### Artifact 3 — Databases (SQLite Integration)
 
 I swapped out the in-memory tracking system and implemented a full SQLite database, complete with schema planning and a separate database handler for queries. Real-world apps need persistent data. This change made the app more realistic, reliable, and structured around safer data operations.
 
-**Skills shown:** SQL schema design, parameterized queries, input validation, exception handling, and separating database logic into its own clean layer.
+#### Skills 
+SQL schema design, parameterized queries, input validation, exception handling, and separating database logic into its own clean layer.
 
-**Outcomes covered:** Database design and use, secure coding practices (aligned with OWASP), and application structure geared toward production use.
+#### Outcomes
+Database design and use, secure coding practices (aligned with OWASP), and application structure geared toward production use.
 
 ### How It All Ties Together
 
