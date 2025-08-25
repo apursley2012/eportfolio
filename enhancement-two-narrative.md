@@ -15,7 +15,7 @@ permalink: /enhancement-two-narrative
    <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> |
   </nav>
 
-# eAlgorithms and Data Structures Enhancement
+# Algorithms and Data Structures Enhancement
 
 ## Artifact Overview
 
