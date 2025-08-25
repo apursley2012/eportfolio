@@ -14,7 +14,8 @@ permalink: /enhancement-one-narrative/
    <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-one">Enhancement 1 Project</a> |
   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-two">Enhancement 2 Project</a> |
   <a href="https://github.com/apursley2012/eportfolio/tree/main/enhancement-three">Enhancement 3 Project</a> |
-   <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo</a> 
+   <a href="https://corner-grocer-alyshaspradlin.replit.app">Enhancement Demo|</a> 
+</nav>
 
 <!-- Enhancement 1 Narrative — Software Design & Engineering -->
 # Software Design &amp; Engineering Enhancement
