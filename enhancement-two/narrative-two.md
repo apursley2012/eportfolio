@@ -1,7 +1,3 @@
----
-layout: default
-title: Enhancement Two 
----
 
 # Algorithms and Data Structures Enhancement
 
